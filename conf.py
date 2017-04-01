@@ -32,6 +32,13 @@ exclude_patterns = ['ActiveIndexFiles/*']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+# Sphinx internationalization details:
+locale_dirs = ['../locale/']    # path outside PyMOTW source directory
+gettext_compact = False         # optional.
+gettext_uuid = False            # add uid line and calculate similarity
+gettext_additional_targets = ['literal-block', 'index', 'raw', 'image']
+language = "es"                 # for translations, use locale code (i.e. "es")
+
 # -- Options for HTML output ---------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the Sphinx documentation
