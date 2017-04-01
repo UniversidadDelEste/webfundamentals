@@ -1,0 +1,119 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Javascript/bandit.rst:2
+msgid "Javascript Project Slot Machine"
+msgstr ""
+
+msgid ".. image:: Javascript/Figures/cherry.png"
+msgstr ""
+
+msgid ".. image:: Javascript/Figures/seven.png"
+msgstr ""
+
+msgid ".. image:: Javascript/Figures/watermellon.png"
+msgstr ""
+
+msgid ".. image:: Javascript/Figures/bell.png"
+msgstr ""
+
+msgid ".. image:: Javascript/Figures/bar.png"
+msgstr ""
+
+msgid ".. image:: Javascript/Figures/diamond.png"
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:22
+msgid ""
+"Lets go to Vegas.   In this section we are going to create our own video "
+"slot machine.  Like all web projects we will start simple and work our "
+"way up to a more complicated project.  Ultimately what we build is going "
+"to look like the following:"
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:24
+msgid ""
+"Lets start by displaying one of two possible slot machine images, that we"
+" will randomly select."
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:43
+msgid ""
+"getImage = function() {\n"
+"   imgarray = Array(\"../_images/seven.png\", "
+"\"../_images/watermellon.png\",\n"
+"   \"../_images/cherry.png\", \"../_images/bell.png\",\n"
+"   \"../_images/diamond.png\", \"../_images/bar.png\");\n"
+"\n"
+"   rNum = Math.floor(Math.random()*imgarray.length);\n"
+"   return imgarray[rNum];\n"
+"}\n"
+"\n"
+"d = document.getElementById(\"slot_1_js\");\n"
+"iTag = document.createElement(\"img\");\n"
+"iTag.src = getImage();\n"
+"d.innerHTML = \"\";\n"
+"d.appendChild(iTag);"
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:44
+msgid "<div id=\"slot_1_js\">"
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:46
+msgid "<div id=\"slot_1_js\"></div>"
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:50
+#: ../../_sources/Javascript/bandit.rst:87
+msgid "</div>"
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:80
+msgid ""
+"count = 0;\n"
+"\n"
+"getImage = function() {\n"
+"   imgarray = Array(\"../_images/seven.png\", "
+"\"../_images/watermellon.png\",\n"
+"   \"../_images/cherry.png\", \"../_images/bell.png\",\n"
+"   \"../_images/diamond.png\", \"../_images/bar.png\");\n"
+"\n"
+"   rNum = Math.floor(Math.random()*imgarray.length);\n"
+"   return imgarray[rNum];\n"
+"}\n"
+"\n"
+"swapImage = function() {\n"
+"    d = document.getElementById(\"slot_2_js\");\n"
+"    iTag = document.createElement(\"img\");\n"
+"    iTag.src = getImage();\n"
+"    d.innerHTML = \"\";\n"
+"    d.appendChild(iTag);\n"
+"    count++;\n"
+"    if(count > 50) {\n"
+"        window.clearInterval(intId,100);\n"
+"    }\n"
+" }\n"
+"\n"
+" intId = window.setInterval(swapImage)"
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:81
+msgid "<div id=\"slot_2_js\">"
+msgstr ""
+
+#: ../../_sources/Javascript/bandit.rst:83
+msgid "<div id=\"slot_2_js\"></div>"
+msgstr ""
+

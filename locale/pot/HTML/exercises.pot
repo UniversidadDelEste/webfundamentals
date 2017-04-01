@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/HTML/exercises.rst:2
+msgid "Exercises"
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:6
+msgid "Make a little webpage to tell me a little about yourself.  Use at least three levels of headings and some paragraphs."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:11
+#: ../../_sources/HTML/exercises.rst:17
+#: ../../_sources/HTML/exercises.rst:24
+#: ../../_sources/HTML/exercises.rst:31
+#: ../../_sources/HTML/exercises.rst:41
+#: ../../_sources/HTML/exercises.rst:47
+#: ../../_sources/HTML/exercises.rst:53
+#: ../../_sources/HTML/exercises.rst:59
+#: ../../_sources/HTML/exercises.rst:65
+#: ../../_sources/HTML/exercises.rst:71
+#: ../../_sources/HTML/exercises.rst:76
+msgid ""
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:11
+#: ../../_sources/HTML/exercises.rst:17
+#: ../../_sources/HTML/exercises.rst:24
+#: ../../_sources/HTML/exercises.rst:31
+#: ../../_sources/HTML/exercises.rst:41
+#: ../../_sources/HTML/exercises.rst:47
+#: ../../_sources/HTML/exercises.rst:53
+#: ../../_sources/HTML/exercises.rst:59
+#: ../../_sources/HTML/exercises.rst:65
+#: ../../_sources/HTML/exercises.rst:71
+#: ../../_sources/HTML/exercises.rst:76
+msgid "\n"
+""
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:12
+msgid "You can copy the URL of almost any image in a browser by right clicking on the image and choosing \"copy image URL\"  or something similar.  Write an html page in the activecode window for this exercise that includes a header element giving a title to some image you find,  Then include the image in the page, sized appropriately,  and a paragraph that describes the image."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:18
+msgid "Make an outline that has capital roman numerals at the highest level of the outline.  and lower case roman numerals for the second level items.  List three new concepts we have covered in this class at the first level, and for each of those list two or three key points."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:25
+msgid "Make a webpage that uses a table to create two columns.  In the left column should be a bulleted list of 5 html tags you have learned about.  In the right column should be a numbered list of 5 attributes of html tags you have learned about."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:32
+msgid "Make a table that looks like this:"
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:None
+msgid ".. image:: HTML/Figures/challengetable.png"
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:36
+msgid "Hint, this is going to require both rowspan and columnspan.  Also, Do not try to do this all at once.  Start with the header, then move on to the rest of the table, working in small parts"
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:42
+msgid "Make a webpage that links to four of your favorite websites."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:48
+msgid "Make a webpage with a link at the bottom that when clicked will jump you all the way to the top of the page."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:54
+msgid "Make a webpage with a link at the top of it that when clicked will jump all the way to the bottom of the page. At the bottom of the page there should be a link to jump back to the top of the page."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:60
+msgid "Make a webpage with an image that has a border of size 2, a width of 200, and a height of 200."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:66
+msgid "Make a webpage with five different images. Skip two lines between each image. Each image should have a title."
+msgstr ""
+
+#: ../../_sources/HTML/exercises.rst:72
+msgid "Make a webpage with an image that when clicked will link to a search engine of your choice"
+msgstr ""
+

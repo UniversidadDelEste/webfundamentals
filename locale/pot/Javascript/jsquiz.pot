@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Javascript/jsquiz.rst:2
+msgid "Javascript Quiz"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:4
+msgid "For the following question, you may use the textbook or your notes.  You may not google other references.  You have 30 minutes to complete this and you may test it as many times as you need to."
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:28
+msgid "document.body.h1"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:28
+msgid "document.h1"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:28
+msgid "document.body"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:28
+msgid "document.body.style"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:28
+msgid "What if there are more than one h1?"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:28
+msgid "No, at a minimum the h1 would be inside the body"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:28
+msgid "Yes"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:28
+msgid "Correct"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:26
+msgid "Q-1: Which of the following are legal?"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:57
+msgid "dragon"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:57
+msgid "wizard"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:57
+msgid "castle"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:57
+msgid "dungeon"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:57
+msgid "Not far enough"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:57
+msgid "Good Job"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:57
+msgid "Not quite, check the order of the ids"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:57
+msgid "No, check the ids carefully"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:41
+msgid "Q-2: Given the following Javascript snippet, what will the alert box say?"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:43
+msgid "<html>\n"
+"<ul>\n"
+"   <li id=\"d\">dragon</li>\n"
+"   <li id=\"c\">wizard</li>\n"
+"   <li id=\"b\">castle</li>\n"
+"   <li id=\"a\">dungeon</li>\n"
+"</ul>\n"
+"<script type=\"text/javascript\">\n"
+"    myLi = document.querySelector('#c')\n"
+"    alert(myLi.innerHTML)\n"
+"</script>\n"
+"</html>"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "a string"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "the string wizard"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "an HTML li element in the tree"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "a CSS rule"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "No, the innerText attribute is a string"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "No, the innerText attribute would be the string wizard"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "Good job"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "Nope, this has nothing to do with CSS yet."
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:70
+msgid "Q-3: Referring to the code in the previous question, what kind of thing is ``myLi`` referring to?"
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:85
+msgid "data-showtitle=\"Show\""
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:75
+msgid "Given the following HTML Add a button with a callback function that changes the ``h1`` from \"Hello World\" to \"So Long CS130\"  When you change the message you should also arrange it so the color of the text turns blue.  The rest of your page should remain unchanged."
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:85
+msgid ""
+msgstr ""
+
+#: ../../_sources/Javascript/jsquiz.rst:85
+msgid "&lt;html&gt;\n"
+"&lt;body&gt;\n"
+"&lt;h1 id=\"hello\"&gt;Hello World&lt;/h1&gt;\n"
+"&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+

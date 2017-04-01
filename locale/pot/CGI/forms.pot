@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/CGI/forms.rst:2
+msgid "Processing user Input"
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:4
+msgid "In the Javascript chapter we looked at a number of HTML tags for processing user input.  If that user input needs to go back to the web server, then we need to enclose our input elements, and a submit button inside a ``form``."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:6
+msgid "When we submit a form, the browser packages up all of the data we have entered into the input elements and sends them back to the server, and your program for processing."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:8
+msgid "Lets change the hello.py program we wrote earlier to have a form where you can enter your name.  After you click on the submit button the page will display ``Hello yourname`` rather than ``Hello World``.  Although it sounds simple, this program will provide us with several avenues to further explore the relationship between the browser, the server, and our cgi program."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:11
+msgid "Lets start with a basic page with a form."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:13
+msgid "<html>\n"
+"  <body>\n"
+"      <form action='cgi-bin/hello2.py' method='get'>\n"
+"          <label for=\"myname\">Enter Your Name</label>\n"
+"          <input id=\"myname\" type=\"text\" name=\"firstname\" value=\"Nada\" />\n"
+"          <input type=\"submit\">\n"
+"      </form>\n"
+"  </body>\n"
+"</html>"
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:25
+msgid "There are two important attributes on the form tag:"
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:27
+msgid "method: this tells the browser which http method to use when submitting the form back to the server.  The options are ``get`` or ``post``."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:29
+msgid "action: This tells the browser the URL to use when submitting the form."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:31
+msgid "The input type ``submit`` renders as a button in the form.  The purpose of this input type is to cause the form to be submitted back to the web server."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:33
+msgid "#!/usr/bin/env python\n"
+"import os\n"
+"\n"
+"print \"Content-type: text/html\\n\"\n"
+"\n"
+"qs = os.environ['QUERY_STRING']\n"
+"if 'firstname' in qs:\n"
+"    name = qs.split('=')[1]\n"
+"else:\n"
+"    name = 'No Name Provided'\n"
+"\n"
+"print \"<html>\"\n"
+"print \"<body>\"\n"
+"print \"<h1>Hello %s</h1>\" % name\n"
+"print \"</pre>\"\n"
+"print \"</body>\"\n"
+"print \"</html>\""
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:54
+msgid "The new cgi script must now check to see if the ``QUERY_STRING`` environment variable contains the string firstname.  Note that that firstname in the query string corresponds to the ``name`` attribute of the input element."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:56
+msgid "When you press the submit button for a form, the web browser iterates over all of the input elements in the form, and collects the name value attributes of each.  These are put together into a string that becomes part of the URL.  The name value pairs are added after the usual URL information using the form:  ``?firstname=Sheldon&lastname=Cooper``  The ``?`` separates the query string information from the URL itself.  The ``&`` separates each name value pair."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:58
+msgid "The following figure gives you a good sense for the flow of how our little application works."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:62
+msgid ".. image:: CGI/Figures/cgi-round-trip.svg"
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:64
+msgid "Combining into One File"
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:66
+msgid "Lets now combine our application into a single file. Using the following flow:"
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:68
+msgid "If there is no QUERY_STRING simply return the HTML for the form."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:69
+msgid "If there is a QUERY_STRING then do not display the form, simply display the Hello greeting to the name stored in the QUERY STRING."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:71
+msgid "Along the way we will clean up our code and refactor it into a couple of functions."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:73
+msgid "#!/usr/bin/env python\n"
+"import os\n"
+"\n"
+"headers = [\"Content-type: text/html\"]\n"
+"qs = os.environ['QUERY_STRING']\n"
+"\n"
+"def sendHeaders():\n"
+"    for h in headers:\n"
+"        print h\n"
+"    print \"\\n\"\n"
+"\n"
+"def sendForm():\n"
+"    print '''\n"
+"    <html>\n"
+"      <body>\n"
+"          <form action='cgi-bin/hellobetter.py' method='get'>\n"
+"              <label for=\"myname\">Enter Your Name</label>\n"
+"              <input id=\"myname\" type=\"text\" name=\"firstname\" value=\"Nada\" />\n"
+"              <input type=\"submit\">\n"
+"          </form>\n"
+"      </body>\n"
+"    </html>\n"
+"    '''\n"
+"\n"
+"def sendPage(name):\n"
+"    print '''\n"
+"    <html>\n"
+"      <body>\n"
+"        <h1>Hello {0}</h1>\n"
+"      </body>\n"
+"    </html>\n"
+"    '''.format(name)\n"
+"\n"
+"if not qs:\n"
+"    sendHeaders()\n"
+"    sendForm()\n"
+"else:\n"
+"    if 'firstname' in qs:\n"
+"        name = qs.split('=')[1]\n"
+"    else:\n"
+"        name = 'No Name Provided'\n"
+"    sendHeaders()\n"
+"    sendPage(name)"
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:120
+msgid "The headers list is to set us up with a pattern that will be useful later.  Sometimes we don't know right away what headers we may want to send.  We'll see that in the next section.  So we can defer sending the headers until we have done all of our processing and are ready to send back the results.  To add a header to our response we can simply append the string to the list of headers."
+msgstr ""
+
+#: ../../_sources/CGI/forms.rst:122
+msgid "The other functions, ``sendPage`` and ``sendForm`` reduce the number of print statements we need by making use of Python's triple quoted strings, and `string formatting <https://docs.python.org/2/library/string.html#string-formatting>`_."
+msgstr ""
+

@@ -1,0 +1,372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web
+# Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Frameworks/wsgi.rst:2
+msgid "Web Server Gateway Interface"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:4
+msgid ""
+"The Web Server Gateway Interface (WSGI) and pronounced Whiskey (what else"
+" would you put in your Flask?).  Is a standard defined by the Python "
+"Software Foundation that describes how a web server communicates with a "
+"web application.  In addition the specification allows for applications "
+"to be layered in order to respond to a single request."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:6
+msgid ""
+"A web server that is WSGI compliant only receives a request and passes "
+"the request on to an application object, it then forwards the response "
+"from the object back to the browser."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:8
+msgid ""
+"From our perspective as application builders, WSGI is very simple.  It "
+"has the following four features:"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:10
+msgid ""
+"WSGI applications are **callable** python objects (functions or classes "
+"with an ``__call__`` method that are passed two arguments: a WSGI "
+"environment as first argument and a function that starts the response."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:12
+msgid ""
+"The application has to start a response using the function provided and "
+"return an **iterable** where each yielded item means writing and "
+"flushing."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:14
+msgid ""
+"The WSGI environment is like a CGI environment just with some additional "
+"keys that are either provided by the server or a middleware."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:16
+msgid ""
+"You can add functionality to your application in a general way by "
+"wrapping the application in another WSGI compliant application."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:19
+msgid "The Application Callable"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:21
+msgid ""
+"The ``app`` object created by ``app = Flask(__name__)`` is a WSGI "
+"compliant object.  It is quite complex and does a lot of work for us "
+"behind the scenes.  To get a better appreciation for that, lets look at a"
+" simpler version of a WSGI app."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:23
+msgid ""
+"from cgi import parse_qs\n"
+"\n"
+"def hello_world(environ, start_response):\n"
+"    # parse_qs turns QUERY_STRING into a nice dictionary\n"
+"    parameters = parse_qs(environ.get('QUERY_STRING', ''))\n"
+"    if 'subject' in parameters:\n"
+"        # all values are lists, to accommodate checkboxes\n"
+"        subject = parameters['subject'][0]\n"
+"    else:\n"
+"        subject = 'World'\n"
+"    start_response('200 OK', [('Content-Type', 'text/html')])\n"
+"    return ['''Hello {subject} Hello {subject} "
+"'''.format(subject=subject)]\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    from wsgiref.simple_server import make_server\n"
+"    srv = make_server('localhost', 8000, hello_world)\n"
+"    srv.serve_forever()"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:44
+msgid "First, an example of parse_qs:"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:48
+msgid ""
+">>> parse_qs(\"foo=bar&blah=baz\")\n"
+"{'foo': ['bar'], 'blah': ['baz']}\n"
+">>> parse_qs(\"foo=bar&blah=baz&foo=sdfsdf\")\n"
+"{'foo': ['bar', 'sdfsdf'], 'blah': ['baz']}\n"
+">>>"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:55
+msgid ""
+"Our app object in Flask is an instance of the Flask class.  Lets look at "
+"a really simple class based implementation of a WSGI app, and then look "
+"at another example that points us in the direction of how Flask extends "
+"the idea into a full framework."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:57
+msgid ""
+"from cgi import parse_qs\n"
+"class WSGIRequestHandler:\n"
+"\n"
+"    def __init__(self):\n"
+"        self.request = {}\n"
+"        self.response = {'Content-Type':'text/plain'}\n"
+"\n"
+"    def __call__(self, environ, start_response):\n"
+"\n"
+"        appiter = None\n"
+"        self.request['args'] = parse_qs(environ['QUERY_STRING'])\n"
+"        appiter = self.get()\n"
+"        start_response('200 OK',list(self.response.items()))\n"
+"        for item in appiter:\n"
+"            yield item\n"
+"\n"
+"        # wsgi applications might have a close function. If it exists\n"
+"        # it *must* be called.\n"
+"        if hasattr(appiter, 'close'):\n"
+"            appiter.close()\n"
+"\n"
+"class Hello(WSGIRequestHandler):\n"
+"    def get(self):\n"
+"        name = self.request['args'].get('subject','world')\n"
+"        return ['Hello {0}'.format(name)]\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    from wsgiref.simple_server import make_server\n"
+"    srv = make_server('localhost', 8080, Hello())\n"
+"    srv.serve_forever()"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:91
+msgid ""
+"This example illustrates an instance of a class as a callable, that "
+"implements the WSGI interface.  Further it shows a way that we can hide "
+"much of the details of the WSGI interface from application programmers by"
+" using inheritance."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:93
+msgid ""
+"The WSGIRequestHandler class implements an  ``__call__`` method that "
+"relies on a subclass that implements a get method to build the actual "
+"page.  Different applications can implement many subclasses of the "
+"WSGIRequestHandler class to handle the various requests."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:95
+msgid ""
+"The ``__init__`` method creates two instance variables to handle response"
+" headers, as well as incoming environment variables such as cookies and "
+"arguments from a submitted form."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:97
+msgid ""
+"the main program in this script imports a make_server function which "
+"assembles a web server to handle WSGI requests, on a host, port.  It also"
+" needs a callable application object.  In this case an instance of the "
+"Hello class.  We will shortly look at how add dispatch functionality to "
+"the example to show how to make a WSGI server that can map URLs to "
+"classes so thate it can respond to a variety of requests."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:99
+msgid "There are two big things that we want to add to our WSGI application:"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:101
+msgid "URL mapping"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:102
+msgid "Error Handling"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:105
+msgid ""
+"In the decorators module we looked at how Flask uses decorators to "
+"associate a function with a particular URL pattern.  In this section we "
+"will not use a decorator but will just create a list of URL to callable "
+"mappings directly and see how that works with the rest of our "
+"implementation."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:107
+msgid ""
+"urls = [\n"
+"    (r'^$', Index),\n"
+"    (r'hello/?$', Hello),\n"
+"    (r'goodbye/?)$', Goodbye)\n"
+"]"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:116
+msgid ""
+"This list of tuples maps three differnt patterns to 3 different callables"
+" that provide a simple response.  All of them are very similar to the "
+"Hello class shown above."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:118
+msgid ""
+"Given that list we need an WSGI compliant callable that can examine the "
+"incoming request and forward the call to the appropriate class."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:120
+msgid ""
+"def router(environ, start_response):\n"
+"    path = environ.get('PATH_INFO', '').lstrip('/')\n"
+"    for regex, callback in urls:\n"
+"        match = re.search(regex, path)\n"
+"        if match is not None:\n"
+"            environ['myapp.url_args'] = match.groups()\n"
+"            return callback()(environ, start_response)\n"
+"    return not_found(environ, start_response)\n"
+"\n"
+"def not_found(environ, start_response):\n"
+"    \"\"\"Called if no URL matches.\"\"\"\n"
+"    start_response('404 NOT FOUND', [('Content-Type', 'text/plain')])\n"
+"    return ['Not Found']"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:136
+msgid "Now the main program looks like this:"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:138
+msgid ""
+"if __name__ == '__main__':\n"
+"    from wsgiref.simple_server import make_server\n"
+"    srv = make_server('localhost', 8080, router)\n"
+"    srv.serve_forever()"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:145
+msgid ""
+"The router callable is passed in to the server as the main application "
+"object.  The keys to the router function are as follows:"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:147
+msgid "Extract the path from the incoming PATH_INFO environment variable"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:148
+msgid "Match that path against the regular expressions provided in the urls list."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:149
+msgid ""
+"Forward the request to the callable that should handle it using the "
+"following:  ``return callback()(environ,start_response)``"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:151
+msgid ""
+"That last line looks a bit crazy, so lets break it down.  Remember that "
+"WSGI compliant callables must accept an environment and a start_response "
+"function,  and they must return an iterable.  So the return statement "
+"must first evaluate its argument:  "
+"``callback()(environ,start_response)``.  This is evaluated from left to "
+"right.  The reference ``callback`` is set in the for loop and will be set"
+" to the callable that matches the current regular expression.  In our "
+"class This will be a class.  So ``callback()`` creates an instance of the"
+" class that matches the regular expression.  As soon as the instnace is "
+"created its ``__call__`` method is invoked by the "
+"``(environ,start_resonse)`` operator.  Which in turn will invoke the "
+"``get`` method on the class which returns an iterable.  That iterable is "
+"returned by the return statement in the router function."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:153
+msgid ""
+"OK, so now that we can call the right function, lets look at how to "
+"handle errors the WSGI way.  Error handling is a nice example of how you "
+"can use middleware.  Or you can think of it in Shrek terms:  Applications"
+" are like Ogres, they have layers.  To implement a middleware layer we "
+"simply implement another WSGI compliant class, that takes an inner WSGI "
+"object as a parameter for its constructor.  Each outer layer has access "
+"to the results of the layer below it, and can modify the results of the "
+"layer below it before returning it to the layer above."
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:155
+#, python-format
+msgid ""
+"class ExceptionMiddleware:\n"
+"    \"\"\"The middleware we use.\"\"\"\n"
+"\n"
+"    def __init__(self, app):\n"
+"        self.app = app\n"
+"\n"
+"    def __call__(self, environ, start_response):\n"
+"        \"\"\"Call the application can catch exceptions.\"\"\"\n"
+"        appiter = None\n"
+"        # just call the application and send the output back\n"
+"        # unchanged but catch exceptions\n"
+"        try:\n"
+"            appiter = self.app(environ, start_response)\n"
+"            for item in appiter:\n"
+"                yield item\n"
+"        # if an exception occours we get the exception information\n"
+"        # and prepare a traceback we can render\n"
+"        except:\n"
+"            e_type, e_value, tb = exc_info()\n"
+"            traceback = ['Traceback (most recent call last):']\n"
+"            traceback += format_tb(tb)\n"
+"            traceback.append('%s: %s' % (e_type.__name__, e_value))\n"
+"            # we might have not a stated response by now. try\n"
+"            # to start one with the status code 500 or ignore an\n"
+"            # raised exception if the application already started one.\n"
+"            try:\n"
+"                start_response('500 INTERNAL SERVER ERROR', [\n"
+"                               ('Content-Type', 'text/plain')])\n"
+"            except:\n"
+"                pass\n"
+"            yield '\\n'.join(traceback)\n"
+"\n"
+"        # wsgi applications might have a close function. If it exists\n"
+"        # it *must* be called.\n"
+"        if hasattr(appiter, 'close'):\n"
+"            appiter.close()"
+msgstr ""
+
+#: ../../_sources/Frameworks/wsgi.rst:194
+msgid ""
+"You will notice that this is a very similar class to the base class for "
+"WSGI applications except that it handles the call to the lower layer "
+"inside a try/except block.  If any of the lower layers fail they will be "
+"caught by the try except at this layer and the traceback will be rendered"
+" on the browser page, along with the 500 internal server error message.  "
+"There are many uses for middleware including session management, form "
+"authentication, You can find a list of open source WSGI middleware "
+"handling user login/logouts, and more you can find a list `here "
+"<http://wsgi.readthedocs.org/en/latest/libraries.html>`_. Although for "
+"our continued use of Flask these are not necessary, as we will be using "
+"some extensions that are specific to flask, which may very well be "
+"implemented using the middleware pattern."
+msgstr ""
+

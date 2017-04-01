@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/CSS/exercises.rst:2
+msgid "CSS Exercises"
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:5
+msgid "Add a CSS rule and appropriate html to style every other line of the unordered list with a light blue background color.  Specify the background color using the rgb method."
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:23
+#: ../../_sources/CSS/exercises.rst:40
+#: ../../_sources/CSS/exercises.rst:47
+#: ../../_sources/CSS/exercises.rst:53
+#: ../../_sources/CSS/exercises.rst:60
+#: ../../_sources/CSS/exercises.rst:66
+msgid ""
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:23
+msgid "&lt;html&gt;\n"
+"   &lt;body&gt;\n"
+"      &lt;ul&gt;\n"
+"         &lt;li&gt;one&lt;/li&gt;\n"
+"         &lt;li&gt;two&lt;/li&gt;\n"
+"         &lt;li&gt;three&lt;/li&gt;\n"
+"         &lt;li&gt;four&lt;/li&gt;\n"
+"         &lt;li&gt;five&lt;/li&gt;\n"
+"         &lt;li&gt;six&lt;/li&gt;\n"
+"      &lt;/ul&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:24
+msgid "Given the table in the html code in the question style the table so that the odd rows have a light gray background  In addition and a header row to the table and style that row so it has white text and a black background color.  Change the font so that they are all 14 point sans serif of some kind."
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:40
+msgid "&lt;html&gt;\n"
+"   &lt;body&gt;\n"
+"      &lt;table&gt;\n"
+"      &lt;tr&gt;&lt;td&gt;Philip&lt;/td&gt;&lt;td&gt;@tweetman&lt;/td&gt;&lt;td&gt;555-1212&lt;/td&gt;&lt;/tr&gt;\n"
+"      &lt;tr&gt;&lt;td&gt;Katey&lt;/td&gt;&lt;td&gt;@applegirl&lt;/td&gt;&lt;td&gt;818-3341&lt;/td&gt;&lt;/tr&gt;\n"
+"      &lt;tr&gt;&lt;td&gt;JetBrains&lt;/td&gt;&lt;td&gt;@codingisfun&lt;/td&gt;&lt;td&gt;04.032.55512&lt;/td&gt;&lt;/tr&gt;\n"
+"      &lt;tr&gt;&lt;td&gt;Bill&lt;/td&gt;&lt;td&gt;@windows&lt;/td&gt;&lt;td&gt;657-9876&lt;/td&gt;&lt;/tr&gt;\n"
+"      &lt;/table&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:41
+msgid "Suppose you are working on a recipe website.  Recipes have a title, a list of ingredients, and an instructions section.  Make a webpage that shows the recipe for grilled cheese sandwiches with bacon and tomato.   The ingredients should be displayed as an unordered list, with no bullets.  meat ingredients should have a light red background color, vegetables should have a light green background, and dairy products should have a light yellow.  The title should be in a sans serif font of your choice, and the instructions should have a heading \"Instructions\" and the font for the instructions should be italic."
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:47
+#: ../../_sources/CSS/exercises.rst:53
+#: ../../_sources/CSS/exercises.rst:60
+#: ../../_sources/CSS/exercises.rst:66
+msgid "\n"
+""
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:48
+msgid "Using CSS and HTML Make a webpage that has two columns.  Each column should use half of the width of the page.  The left half should have a light gray background and the right half should have a light green background.  The left half should have a list of the 5 best selling  books in Amazon's kindle store, and the right should have a list of your five favorite celebrities or athletes."
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:54
+msgid "Using the nav element, make a navbar for at the top of a sample webpage.  Add at least three links to the navbar using an unordered list that is displayed as inline rather than block.  Make the navbar have a light blue background color, but change the background of the title to a darker blue when the mouse hovers over it.  (see the `:hover selector <http://www.w3schools.com/cssref/sel_hover.asp>`_)"
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:61
+msgid "Using the image of the playing card, use transformations and animations to make the playing card spin around endlessly."
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:67
+msgid "Using the template developed in the layout chapter, develop a homepage for yourself, published on github pages, that employs a two column layout with a fixed navbar (always on screen), and a footer.  The navbar should link to at least two additional pages used to describe your hobbies or favorite teams.  The CSS for this website should be contained in its own CSS file, and all three pages should use this CSS file."
+msgstr ""
+
+#: ../../_sources/CSS/exercises.rst:70
+msgid "Modify the final version of the menu project so that the menu is a horizontal menu with the first level of submenus dropping down below the selected item."
+msgstr ""
+

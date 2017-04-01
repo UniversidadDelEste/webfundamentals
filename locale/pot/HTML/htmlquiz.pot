@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/HTML/htmlquiz.rst:2
+msgid "HTML Quiz"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:4
+msgid "Do NOT click on the start button until you are ready to take this quiz.  (probably during class)  Once you open the quiz you are committed to finishing it.  The quiz has a time limit of 20 minutes."
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:21
+msgid "Hyperlinks and Text Markup Language"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:21
+msgid "Hyper Text Markup Language"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:21
+msgid "Home Tool Markup Language"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:21
+#: ../../_sources/HTML/htmlquiz.rst:21
+#: ../../_sources/HTML/htmlquiz.rst:21
+#: ../../_sources/HTML/htmlquiz.rst:21
+#: ../../_sources/HTML/htmlquiz.rst:34
+#: ../../_sources/HTML/htmlquiz.rst:34
+#: ../../_sources/HTML/htmlquiz.rst:34
+#: ../../_sources/HTML/htmlquiz.rst:34
+#: ../../_sources/HTML/htmlquiz.rst:45
+#: ../../_sources/HTML/htmlquiz.rst:45
+#: ../../_sources/HTML/htmlquiz.rst:45
+#: ../../_sources/HTML/htmlquiz.rst:58
+#: ../../_sources/HTML/htmlquiz.rst:58
+#: ../../_sources/HTML/htmlquiz.rst:58
+#: ../../_sources/HTML/htmlquiz.rst:58
+#: ../../_sources/HTML/htmlquiz.rst:72
+#: ../../_sources/HTML/htmlquiz.rst:72
+#: ../../_sources/HTML/htmlquiz.rst:72
+#: ../../_sources/HTML/htmlquiz.rst:72
+#: ../../_sources/HTML/htmlquiz.rst:86
+#: ../../_sources/HTML/htmlquiz.rst:86
+#: ../../_sources/HTML/htmlquiz.rst:86
+#: ../../_sources/HTML/htmlquiz.rst:86
+#: ../../_sources/HTML/htmlquiz.rst:95
+#: ../../_sources/HTML/htmlquiz.rst:95
+#: ../../_sources/HTML/htmlquiz.rst:108
+#: ../../_sources/HTML/htmlquiz.rst:108
+#: ../../_sources/HTML/htmlquiz.rst:108
+#: ../../_sources/HTML/htmlquiz.rst:108
+#: ../../_sources/HTML/htmlquiz.rst:121
+#: ../../_sources/HTML/htmlquiz.rst:121
+#: ../../_sources/HTML/htmlquiz.rst:121
+#: ../../_sources/HTML/htmlquiz.rst:121
+#: ../../_sources/HTML/htmlquiz.rst:130
+#: ../../_sources/HTML/htmlquiz.rst:130
+#: ../../_sources/HTML/htmlquiz.rst:142
+#: ../../_sources/HTML/htmlquiz.rst:142
+#: ../../_sources/HTML/htmlquiz.rst:142
+#: ../../_sources/HTML/htmlquiz.rst:142
+msgid "None"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:20
+msgid "Q-8: What does HTML stand for?"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:34
+msgid "&lt;h6&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:34
+#: ../../_sources/HTML/htmlquiz.rst:142
+msgid "&lt;head&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:34
+msgid "&lt;heading&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:34
+#: ../../_sources/HTML/htmlquiz.rst:142
+msgid "&lt;h1&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:33
+msgid "Q-9: Choose the correct HTML element for the largest heading:"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:45
+msgid "&lt;br&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:45
+msgid "&lt;break&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:45
+msgid "&lt;lb&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:44
+msgid "Q-10: What is the correct HTML element for inserting a line break?"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:58
+msgid "&lt;a&gt;http://www.w3schools.com&lt;/a&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:58
+msgid "&lt;a href=\"http://www.w3schools.com\"&gt;W3Schools&lt;/a&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:58
+msgid "&lt;a name=\"http://www.w3schools.com\"&gt;W3Schools.com&lt;/a&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:58
+msgid "&lt;a url=\"http://www.w3schools.com\"&gt;W3Schools.com&lt;/a&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:57
+msgid "Q-11: What is the correct HTML for creating a hyperlink?"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:72
+msgid "*"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:72
+msgid "/"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:72
+msgid "&lt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:72
+msgid "^"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:70
+msgid "Q-12: Which character is used to indicate an end tag?"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:86
+msgid "&lt;table&gt;&lt;tr&gt;&lt;td&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:86
+msgid "&lt;table&gt;&lt;head&gt;&lt;tfoot&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:86
+msgid "&lt;thead&gt;&lt;body&gt;&lt;tr&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:86
+msgid "&lt;table&gt;&lt;tr&gt;&lt;tt&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:84
+msgid "Q-13: Which of these elements are all &lt;table&gt; elements?"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:95
+#: ../../_sources/HTML/htmlquiz.rst:130
+msgid "True"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:95
+#: ../../_sources/HTML/htmlquiz.rst:130
+msgid "False"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:94
+msgid "Q-14: Inline elements are normally displayed without starting a new line."
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:108
+msgid "&lt;dl&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:108
+msgid "&lt;ul&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:108
+msgid "&lt;list&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:108
+msgid "&lt;ol&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:107
+msgid "Q-15: How can you make a numbered list?"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:121
+msgid "&lt;image src=\"image.gif\" alt=\"MyImage\"&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:121
+msgid "&lt;img href=\"image.gif\" alt=\"MyImage\"&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:121
+msgid "&lt;img src=\"image.gif\" alt=\"MyImage\"&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:121
+msgid "&lt;img alt=\"MyImage\"&gt;image.gif&lt;/img&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:120
+msgid "Q-16: What is the correct HTML for inserting an image?"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:129
+msgid "Q-17: Block elements are normally displayed without starting a new line."
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:142
+msgid "&lt;meta&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:142
+msgid "&lt;title&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:142
+msgid "Q-18: Which HTML element defines the title of a document?"
+msgstr ""
+
+#: ../../_sources/HTML/htmlquiz.rst:145
+msgid "Once you have completed the quiz you can review your answers but you will not be able to change them."
+msgstr ""
+

@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web
+# Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Frameworks/templates.rst:2
+msgid "Template Engines"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:4
+msgid "There are many benefits to using templates."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:6
+msgid "Separation of the view from the controller and model code."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:7
+msgid "Increased productivity."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:8
+msgid "Ease of creating a site with a unified design."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:9
+msgid ""
+"Division of labor.  Designers can now work on template files using html "
+"plus a bit more without needing to know how to write Python."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:11
+msgid ""
+"At the simplest level templates are not much different than a Python "
+"formatted string.  However they are much more convenient to use, and have"
+" many more features that we will explore shortly.  Here is a simple "
+"example:"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:13
+msgid ""
+"from jinja2 import Template\n"
+"template = Template('Hello {{ name }}!')\n"
+"template.render(name='John Doe')"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:19
+msgid "A slightly more complicated example goes like this:"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:21
+msgid ""
+"from jinja2 import Environment, FileSystemLoader\n"
+"env = Environment(loader=FileSystemLoader('/path/to/templates))\n"
+"t = env.get_template('foo.html')\n"
+"t.render(name='Luther')"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:28
+msgid ""
+"This example shows how we can set up an environment that can be shared "
+"among many functions.  This environment takes care of the details behind "
+"locating and reading our templates from a file when we want to use them."
+"  The foo.html file could look like this:"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:30
+msgid ""
+"<html>\n"
+"    <body>\n"
+"    <h1>Hello {{ name }}</h1>\n"
+"    </body>\n"
+"</html>"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:38
+msgid ""
+"The values inside the double curlies are not limited to being string "
+"objects, although they must have an ``__str__`` method if they are going "
+"to be useful.  Consider an instance of a Student class that has instance "
+"variables for firstname, lastname, and gpa.  Lets change our template to "
+"look like the following:"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:40
+msgid ""
+"<html>\n"
+"    <body>\n"
+"        <h1>Hello {{ s.firstname }} {{ s.lastname }}</h1>\n"
+"        <p>Your gpa is {{ s.gpa }}.</p>\n"
+"    </body>\n"
+"</html>"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:50
+msgid ""
+"Assuming we have a student object called joe we can render the template "
+"above with the line:  ``t.render(s=joe)``  This would also work if joe "
+"was a dictionary and had keys firstname, lastname, and gpa.  The dot "
+"notation works for either attributes or items in a dictionary  "
+"(``__getattr__`` or ``__getitem__``) for those of you who like magic "
+"method speak."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:54
+msgid "Loops in Templates"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:56
+msgid ""
+"Lets suppose you want to make a table in a template.  The ideal would be "
+"to pass render a list of things, and have the template turn the list into"
+" a table.  (or an unordered list or whatever)  This is easy to do."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:58
+#, python-format
+msgid ""
+"<html>\n"
+"    <body>\n"
+"        <h1>The first {{ plist|length }} prime numbers</h1>\n"
+"        <table>\n"
+"            {% for i in plist: %}\n"
+"                <tr><td>{{ i }}</td></tr>\n"
+"            {% endfor %}\n"
+"        </table>\n"
+"    </body>\n"
+"</html>"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:72
+msgid "This introduces several interesting new features of templates."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:74
+msgid ""
+"The ``{% ... %}`` notation is used to include a non-rendering bit of code"
+" in the template.  In this example we introduce a for loop.  Notice that "
+"since html does not require you to indent things we need an endfor to "
+"delimit the end of the for loop."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:76
+msgid ""
+"Jinja2 includes a huge number of filters that you can use on a variable."
+"  The filter ``plist|length`` will render as the number of elements in "
+"the plist list."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:80
+msgid "Conditionals in Templates"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:82
+msgid ""
+"In addition to loops you can also have a conditional in a template for "
+"example:"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:84
+#, python-format
+msgid ""
+"<html>\n"
+"    <body>\n"
+"        {% if name %}\n"
+"        <h1>Hello {{ name }} </h1>\n"
+"        {% else %}\n"
+"        <h1>Hello World</h1>\n"
+"        {% endif %}\n"
+"    </body>\n"
+"</html>"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:98
+msgid "Template Inheritance"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:100
+msgid ""
+"The real power of templates comes when you use template inheritance.  The"
+" following scenario is very common:"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:102
+msgid ""
+"1.  base.html  - This file contains the layout that will be used "
+"throughout the site, along with all of the links to css files and "
+"includes of javascript.  The base.html file will define a set of blocks "
+"that have default content, but can be overridden by other templates. 1.  "
+"index.html --  The landing page, that inherits from base.html and "
+"customizes some blocks for the main page. 1.  other child pages, will "
+"also inherit from base.html annd make their own customizations."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:106
+msgid "For example lets suppose you have a base.html file that looks like this:"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:108
+#, python-format
+msgid ""
+"<html>\n"
+"<head>\n"
+"    {% block head %}\n"
+"    <link rel=\"stylesheet\" href=\"static/style.css\" />\n"
+"    <title>{% block title %}{% endblock %} - My Webpage</title>\n"
+"    {% endblock %}\n"
+"</head>\n"
+"<body>\n"
+"    <main>{% block content %}{% endblock %}</main>\n"
+"    <footer>\n"
+"        {% block footer %}\n"
+"        Creative Commons 2014 by <a "
+"href=\"http://domain.invalid/\">you</a>.\n"
+"        {% endblock %}\n"
+"    </footer>\n"
+"</body>"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:127
+msgid "Running this through the Jinja2 renderer gives us this:"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:129
+msgid ""
+"<html>\n"
+"<head>\n"
+"\n"
+"   <link rel=\"stylesheet\" href=\"static/style.css\" />\n"
+"   <title> - My Webpage</title>\n"
+"\n"
+"</head>\n"
+"<body>\n"
+"   <main></main>\n"
+"   <footer>\n"
+"\n"
+"       Creative Commons 2014 by <a "
+"href=\"http://domain.invalid/\">you</a>.\n"
+"\n"
+"   </footer>\n"
+"</body>"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:148
+msgid ""
+"Now lets create a child template that contains a title and some real "
+"content."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:150
+#, python-format
+msgid ""
+".. code-block:: html\n"
+"\n"
+"   {% block content %}\n"
+"   <h1>Tempates are awesome for 10 reasons</h1>\n"
+"   <ol>\n"
+"       {% for i in reasons: %}\n"
+"       <li>Reason {{ i }}</li>\n"
+"       {% endfor %}\n"
+"   </ol>\n"
+"   {% endblock %}"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:165
+msgid "And render it with ``render(reasons=[1,2,3,4,5])``"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:167
+msgid ""
+"<html>\n"
+"<head>\n"
+"\n"
+"   <link rel=\"stylesheet\" href=\"static/style.css\" />\n"
+"   <title>\n"
+"Great Title\n"
+" - My Webpage</title>\n"
+"\n"
+"</head>\n"
+"<body>\n"
+"   <main>\n"
+"<h1>Tempates are awesome for 5 reasons</h1>\n"
+"<ol>\n"
+"\n"
+"    <li>Reason 1</li>\n"
+"\n"
+"    <li>Reason 2</li>\n"
+"\n"
+"    <li>Reason 3</li>\n"
+"\n"
+"    <li>Reason 4</li>\n"
+"\n"
+"    <li>Reason 5</li>\n"
+"\n"
+"</ol>\n"
+"</main>\n"
+"   <footer>\n"
+"\n"
+"       Creative Commons 2014 by <a "
+"href=\"http://domain.invalid/\">you</a>.\n"
+"\n"
+"   </footer>\n"
+"</body>"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:203
+msgid ""
+"Notice that the header and footer are intact, however the child has the "
+"title \"Great Title\"  and the content of the child has been inserted "
+"into the content block."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:207
+msgid "Templates in Flask"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:209
+msgid "To use Jinja templates in flask is easy."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:211
+msgid "You need to make a templates subdirectory in your main project directory."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:212
+msgid "Add ``from flask import render_template`` to your Python."
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:213
+msgid ""
+"Then from one of your controller functions, rather than returning a big "
+"string, you simple invoke the ``render_template`` function:  ``return "
+"render_template('todo.html',todolist=todolist))"
+msgstr ""
+
+#: ../../_sources/Frameworks/templates.rst:215
+msgid ""
+"Remember that in flask our controller functions return an iterable.  The "
+"render_template function returns such an interable.  Its just a string, "
+"so you can call the render_template function and print the results if you"
+" like."
+msgstr ""
+

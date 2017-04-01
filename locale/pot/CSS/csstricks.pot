@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/CSS/csstricks.rst:2
+msgid "CSS Tricks"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:4
+msgid "**DRAFT**  This chapter is a work in progress."
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:6
+msgid "CSS is used for all kinds of special effects that make web pages look good.  In this section we will investigate some of them."
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:10
+msgid "Hover"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:87
+#: ../../_sources/CSS/csstricks.rst:105
+#: ../../_sources/CSS/csstricks.rst:143
+msgid ""
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:87
+msgid " &lt;html&gt;\n"
+"     &lt;head&gt;\n"
+"         &lt;title&gt;Home&lt;/title&gt;\n"
+"         &lt;style&gt;\n"
+"         header {\n"
+"             position: fixed;\n"
+"             background-color: #bbbbbb;\n"
+"             top: 0px;\n"
+"             left: 0px;\n"
+"             width: 100%;\n"
+"             height: 20px;\n"
+"         }\n"
+"         nav {\n"
+"             margin-top: 20px;\n"
+"             margin-bottom: 0px;\n"
+"             background-color: green;\n"
+"         }\n"
+"         nav li {\n"
+"            display: inline;\n"
+"         }\n"
+"\n"
+"         nav li:hover {\n"
+"            background-color: lightblue;\n"
+"         }\n"
+"         section {\n"
+"             float: left;\n"
+"             width: 20%;\n"
+"             height: 500px;\n"
+"             background-color: blue;\n"
+"             color: white;\n"
+"         }\n"
+"         aside {\n"
+"             float: left;\n"
+"             width: 80%;\n"
+"             height: 500px;\n"
+"             background-color: red;\n"
+"         }\n"
+"         footer {\n"
+"             clear: both;\n"
+"             background-color: yellow;\n"
+"         }\n"
+"         body {\n"
+"             background-color: black;\n"
+"             margin: 0px;\n"
+"         }\n"
+"         &lt;/style&gt;\n"
+"\n"
+"     &lt;/head&gt;\n"
+"     &lt;body&gt;\n"
+"         &lt;header&gt;\n"
+"             A header that stays stuck to the top.\n"
+"         &lt;/header&gt;\n"
+"         &lt;nav&gt;\n"
+"             &lt;ul&gt;\n"
+"             &lt;li&gt;About&lt;/li&gt;\n"
+"             &lt;li&gt;Papers&lt;/li&gt;\n"
+"             &lt;li&gt;Donate&lt;/li&gt;\n"
+"             &lt;/ul&gt;\n"
+"         &lt;/nav&gt;\n"
+"         &lt;section&gt;\n"
+"             This would be a good place for a table of contents\n"
+"         &lt;/section&gt;\n"
+"         &lt;aside&gt;\n"
+"             This is the main content area\n"
+"             &lt;img src=\"http://interactivepython.org/runestone/static/webfundamentals/_images/img_sem_elements.gif\" /&gt;\n"
+"         &lt;/aside&gt;\n"
+"         &lt;footer&gt;\n"
+"             Copyright Area, Contact Us.\n"
+"         &lt;/footer&gt;\n"
+"     &lt;/body&gt;\n"
+" &lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:88
+msgid "Add link with a :hover pseudo-class to the example above."
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:89
+msgid "Add an ``h2`` with the title more info.  Underneath the h2 add  a ``main`` container with a paragraph.  The details element should be initially hidden and only appear when you hover the cursor over the h2.  Hint:  the ``~`` character allows you to write a selector that matches a sibling."
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:92
+msgid "The details tag is a semantic tag that has some very nice properties similar to our experiment above."
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:105
+msgid "&lt;p&gt;The details tag contains a summary tag and the details.  The summary is displayed with a triangle next to it.  The details are initially hidden but then displayed when the triangle is clicked on.&lt;/p&gt;\n"
+"\n"
+"&lt;details&gt;\n"
+"    &lt;summary&gt;Show me More&lt;/summary&gt;\n"
+"    &lt;p&gt;This text will only show when the triangle is clicked on&lt;/p&gt;\n"
+"&lt;/details&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:107
+msgid "Animation"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:109
+msgid "Using the ``@keyframes`` keyword we can create an animation and then apply that animation to other css elements.  Check out the following example that animates the background color.  With keyframes we can specify a starting and and ending condition using ``from`` and ``to`` or we can specify multiple points along the animation using ``xx%``."
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:113
+msgid "Animation should work as shown in all modern browsers.  Safari version 8 and earlier will require the ``-webkit-`` prefix to be added."
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:143
+msgid "&lt;html&gt;\n"
+"&lt;head&gt;\n"
+"  &lt;style&gt;\n"
+"  @keyframes example {\n"
+"         from {background-color: red;}\n"
+"         to {background-color: yellow;}\n"
+"  }\n"
+"\n"
+"  div {\n"
+"      width: 100px;\n"
+"      height: 100px;\n"
+"      background-color: red;\n"
+"      animation-name: example;\n"
+"      animation-duration: 4s;\n"
+"  }\n"
+"  &lt;/style&gt;\n"
+"&lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"&lt;div&gt;\n"
+"&lt;h1&gt;Hello World&lt;/h1&gt;\n"
+"&lt;/div&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:144
+msgid "Experiment with the following:"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:146
+msgid "``animation-delay: 2s;``"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:147
+msgid "``animation-iteration-count: infinite;``"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:148
+msgid "``animation-direction: alternate;``"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:150
+msgid "@keyframes spin {\n"
+"    from {\n"
+"        transform: rotate(0deg);\n"
+"    } to {\n"
+"        transform: rotate(360deg);\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:161
+msgid "@keyframes moveit {\n"
+"    from {\n"
+"        top: 0px;\n"
+"        left: 0px;\n"
+"    }\n"
+"    to {\n"
+"        top: 300px;\n"
+"        left: 300px;\n"
+"    }\n"
+"}"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:174
+msgid "Add an image to the picture and make it spin infinitely."
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:175
+msgid "try creating a scale animation"
+msgstr ""
+
+#: ../../_sources/CSS/csstricks.rst:176
+msgid "Use ``animation-fill-mode: forwards;`` to keep the element at the ending position."
+msgstr ""
+

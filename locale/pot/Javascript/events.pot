@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Javascript/events.rst:2
+msgid "Javascript Events"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:4
+msgid "Rather than simply list out a host of possible events, lets look at an example that illustrates the use of many events."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:6
+msgid "Consider the following page:"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:38
+#: ../../_sources/Javascript/events.rst:71
+#: ../../_sources/Javascript/events.rst:108
+#: ../../_sources/Javascript/events.rst:156
+#: ../../_sources/Javascript/events.rst:213
+msgid ""
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:38
+msgid " &lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"     &lt;title&gt;Colors&lt;/title&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"     &lt;label for=\"redi\"&gt;Red:&lt;/label&gt;\n"
+"     &lt;input type=\"text\" id=\"redi\" min=\"0\" value=\"255\" /&gt; &lt;br&gt;\n"
+"     &lt;label for=\"greeni\"&gt;Green:&lt;/label&gt;\n"
+"     &lt;input type=\"text\" id=\"greeni\"  value=\"255\" /&gt;&lt;br&gt;\n"
+"     &lt;label for=\"bluei\"&gt;Blue:&lt;/label&gt;\n"
+"     &lt;input type=\"text\" id=\"bluei\" value=\"255\" /&gt;\n"
+"     &lt;br&gt;\n"
+"     &lt;button onclick=\"changeColor();\"&gt;Change Color&lt;/button&gt;\n"
+"\n"
+"     &lt;script&gt;\n"
+"       changeColor = function() {\n"
+"           red = document.querySelector('#redi').value;\n"
+"           green = document.querySelector('#greeni').value;\n"
+"           blue = document.querySelector('#bluei').value;\n"
+"           colorStr = \"rgb(\"+red+\",\"+green+\",\"+blue+\")\";\n"
+"           document.body.style.backgroundColor = colorStr;\n"
+"       }\n"
+"     &lt;/script&gt;\n"
+"   &lt;/body&gt;\n"
+" &lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:39
+msgid "Now this first example is similar in many ways to our previous examples, we are using the ``querySelector`` method to obtain a reference to the text input element and reading its value.  The ``onclick`` method on our button attaches the changeColor method to our button."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:41
+msgid "However this is kind of unsatisfying, it would be nice if we could just type a new value into one of the text input boxes and have that cause the color to change.  Another event type that is commonly used with input is the ``onchange`` event.  Lets add an onchange event to the text input elements and attach that to our changeColor function.  Now when you make a change to a color and tap the return key on your keyboard the color will change.  The color will also change if you click outside the text input box.  Give it a try."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:71
+msgid " &lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"     &lt;title&gt;Colors&lt;/title&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"     &lt;label for=\"redi\"&gt;Red:&lt;/label&gt;\n"
+"     &lt;input type=\"text\" id=\"redi\" onchange=\"changeColor()\" value=\"255\" /&gt; &lt;br&gt;\n"
+"     &lt;label for=\"greeni\"&gt;Green:&lt;/label&gt;\n"
+"     &lt;input type=\"text\" id=\"greeni\" onchange=\"changeColor()\" value=\"255\" /&gt;&lt;br&gt;\n"
+"     &lt;label for=\"bluei\"&gt;Blue:&lt;/label&gt;\n"
+"     &lt;input type=\"text\" id=\"bluei\" onchange=\"changeColor()\" value=\"255\" /&gt;\n"
+"     &lt;br&gt;\n"
+"     &lt;button onclick=\"changeColor();\"&gt;Change Color&lt;/button&gt;\n"
+"\n"
+"     &lt;script&gt;\n"
+"       changeColor = function() {\n"
+"           red = document.querySelector('#redi').value;\n"
+"           green = document.querySelector('#greeni').value;\n"
+"           blue = document.querySelector('#bluei').value;\n"
+"           colorStr = \"rgb(\"+red+\",\"+green+\",\"+blue+\")\";\n"
+"           document.body.style.backgroundColor = colorStr;\n"
+"       }\n"
+"     &lt;/script&gt;\n"
+"   &lt;/body&gt;\n"
+" &lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:72
+msgid "Typing return or clicking with the mouse is still not as godd as we could do.  There are a few other keyboard specific events we can attach to our text input box.  Try changing ``onchange`` attribute in the example above to ``onkeyup``  This event occurs after the user has typed a key and the key has returned to its up position.  In fact there are three events you can experiment with for keyboard keys:"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:74
+msgid "onkeydown  -- fires when the key is pressed"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:75
+msgid "onkeypress  -- fires after onkeydown but not for control, shift, alt"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:76
+msgid "onkeyup -- fires when they key goes up"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:78
+msgid "You may notice some slightly unreliable behavior here.  The problem is that there is a slight timing issue between when the key event happens and when the update to the text input boxes value happens.  It may be that the value is updated before you read it, or it may not be updated until after you read it.  There are ways to work around this, but that would add more difficulty to the example than we want to go into right now."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:80
+msgid "Now, to explore a few additional events, lets use a nicer user interface element to adjust the color of our background.  Lets use a slider.  We can get a slider by changing the input type to ``range``."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:108
+msgid " &lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"     &lt;title&gt;Colors&lt;/title&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"     &lt;label for=\"redi\"&gt;Red:&lt;/label&gt;\n"
+"     &lt;input type=\"range\" min=0 max=255 id=\"redi\" onchange=\"changeColor()\" value=\"255\" /&gt; &lt;br&gt;\n"
+"     &lt;label for=\"greeni\"&gt;Green:&lt;/label&gt;\n"
+"     &lt;input type=\"range\" min=0 max=255 id=\"greeni\" onchange=\"changeColor()\" value=\"255\" /&gt;&lt;br&gt;\n"
+"     &lt;label for=\"bluei\"&gt;Blue:&lt;/label&gt;\n"
+"     &lt;input type=\"range\" min=0 max=255 id=\"bluei\" onchange=\"changeColor()\" value=\"255\" /&gt;\n"
+"     &lt;br&gt;\n"
+"     &lt;script&gt;\n"
+"       changeColor = function() {\n"
+"           red = document.querySelector('#redi').value;\n"
+"           green = document.querySelector('#greeni').value;\n"
+"           blue = document.querySelector('#bluei').value;\n"
+"           colorStr = \"rgb(\" + red + \",\" + green + \",\" + blue + \")\";\n"
+"           document.body.style.backgroundColor = colorStr;\n"
+"       }\n"
+"     &lt;/script&gt;\n"
+"   &lt;/body&gt;\n"
+" &lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:109
+msgid "Ok, that is really nice, Now we can move the slider, and whenever we let go, it just updates the color.  But we can go one step further and have the color change as the bar moves!  Change the event from ``onchange`` to ``onmousemove`` to see the results."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:112
+msgid "Before we leave this section, lets add two more enhancement to this example:"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:114
+msgid "Lets display the values of red, green, and blue"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:115
+msgid "Lets start with a different default value for our rgb colors and have the page automatically change its background color when the page is loaded."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:117
+msgid "We don't *need* the values to change continuously, so lets update the values when the user stops pressing the mouse key.  To do this we will add a second event attribute to each of our input elements.  The event we need is ``onmouseup``  When we get an onmouseup event we will call another function to display the current values of red, green, and blue."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:156
+msgid " &lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"     &lt;title&gt;Colors&lt;/title&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"     &lt;label for=\"redi\"&gt;Red:&lt;/label&gt;\n"
+"     &lt;input type=\"range\" min=0 max=255 id=\"redi\" onmousemove=\"changeColor()\"\n"
+"           onmouseup=\"showValues()\" value=\"125\" /&gt; &lt;span id=\"redv\"&gt;&lt;/span&gt;&lt;br&gt;\n"
+"     &lt;label for=\"greeni\"&gt;Green:&lt;/label&gt;\n"
+"     &lt;input type=\"range\" min=0 max=255 id=\"greeni\" onmousemove=\"changeColor()\"\n"
+"           onmouseup=\"showValues()\" value=\"125\" /&gt;&lt;span id=\"greenv\"&gt;&lt;/span&gt;&lt;br&gt;\n"
+"     &lt;label for=\"bluei\"&gt;Blue:&lt;/label&gt;\n"
+"     &lt;input type=\"range\" min=0 max=255 id=\"bluei\" onmousemove=\"changeColor()\"\n"
+"           onmouseup=\"showValues()\" value=\"200\" /&gt;&lt;span id=\"bluev\"&gt;&lt;/span&gt;\n"
+"\n"
+"     &lt;br&gt;\n"
+"     &lt;script&gt;\n"
+"       changeColor = function() {\n"
+"           red = document.querySelector('#redi').value;\n"
+"           green = document.querySelector('#greeni').value;\n"
+"           blue = document.querySelector('#bluei').value;\n"
+"           colorStr = \"rgb(\" + red + \",\" + green + \",\" + blue + \")\";\n"
+"           document.body.style.backgroundColor = colorStr;\n"
+"       }\n"
+"       showValues = function() {\n"
+"         document.querySelector('#redv').innerHTML = document.querySelector(\"#redi\").value;\n"
+"         document.querySelector('#greenv').innerHTML = document.querySelector(\"#greeni\").value;\n"
+"         document.querySelector('#bluev').innerHTML = document.querySelector(\"#bluei\").value;\n"
+"       }\n"
+"       window.onload = function() { changeColor(); showValues(); }\n"
+"     &lt;/script&gt;\n"
+"   &lt;/body&gt;\n"
+" &lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:157
+msgid "This is a nice polished example now.  So lets take a look at a couple of the new items.  First, we have attached to different events to the input element.  In general you can attach as many events as make sense to an element.  In this case we have one for the mouse movement, and a second for the mouse up."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:159
+msgid "Second, the showValues function contains an assignment statement that is very compact to write, but may be complicted to follow, so lets look at one of those statements, and then rewrite it in a way that will probably be easier to understand."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:161
+msgid "document.querySelector('#redv').innerHTML = document.querySelector(\"#redi\").value;"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:165
+msgid "Starting with the right hand side of the assignment statement, the above is getting the value from the slider for the red value.  It is then setting the innerHTML of the ``span`` element that comes after the slider to hold that value.  We could rewrite this statement to be easier to undertand as follows:"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:167
+msgid "theSpan = document.querySelector('#redv');\n"
+"theSlider = document.querySelector(\"#redi\");\n"
+"sliderVal = theSlider.value;\n"
+"theSpan.innerHTML = sliderVal;"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:174
+msgid "The second example breaks up our work into much more manageable chunks:"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:176
+msgid "Get a reference to the span element following the slider.  This is where the value of the slider will be shown."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:177
+msgid "Get a reference to the input slider node in the document object model."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:178
+msgid "Get the slider value from the value attribute"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:179
+msgid "Store the slider value in the innerHTML attribute of the span."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:181
+msgid "Finally, when the page loads we want to set the background color and have each slider value shown on the page.  To do this we need to attach two functions to the ``window.onload`` event.  This is not possible to do without some fancy Javascript magic, but this illustrates a way of Javascript programming that is fairly common.  Here is the important line:"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:183
+msgid "window.onload = function() { changeColor(); showValues(); }"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:187
+msgid "When the page is fully loaded the ``window.onload`` event happens.  Since we want both of our functions to be called, we create a function (without a name!) to be called, and this function calls both of our functions.  This is a little bit different than how we attach functions to HTML elements, but don't worry about it too much for now.  Just give the example a try to see that it really works just how we want it to."
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:213
+msgid "&lt;html&gt;\n"
+"&lt;body&gt;\n"
+"&lt;button onclick=\"stop();\"&gt;Stop&lt;/button&gt;\n"
+"&lt;script&gt;\n"
+"  changeColor = function() {\n"
+"      red = Math.floor(Math.random()*255);\n"
+"      green = Math.floor(Math.random()*255);\n"
+"      blue = Math.floor(Math.random()*255);\n"
+"      colorStr = \"rgb(\" + red + \",\" + green + \",\" + blue + \")\";\n"
+"      document.body.style.backgroundColor = colorStr;\n"
+"      //window.setInterval(changeColor, 1000);\n"
+"  }\n"
+"  stop = function() {\n"
+"      window.clearInterval(intId);\n"
+"  }\n"
+"  intId = window.setInterval(changeColor, 1000);\n"
+"&lt;/script&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:215
+msgid "Events Used in this Section"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:217
+msgid "onclick"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:218
+msgid "onchange"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:219
+msgid "onkeyup"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:220
+msgid "onkeypress"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:221
+msgid "onmouseup"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:222
+msgid "onmousedown"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:223
+msgid "onmousemove"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:224
+msgid "window.onload"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:225
+msgid "window.setInterval"
+msgstr ""
+
+#: ../../_sources/Javascript/events.rst:226
+msgid "window.clearInterval"
+msgstr ""
+

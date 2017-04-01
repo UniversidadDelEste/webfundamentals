@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Javascript/finalquiz.rst:2
+msgid "Javascript Final Quiz"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:4
+msgid "For the following questions, you may use the textbook or your notes.  You may not google other references.  You have 30 minutes to complete both parts of the quiz.  Make sure that you complete the multiple choice questions first, and click \"Finish Exam\" before you go on to do the coding question."
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:27
+msgid "&lt;script&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:27
+msgid "&lt;scripting&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:27
+msgid "&lt;style&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:27
+msgid "&lt;javascript&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:27
+#: ../../_sources/Javascript/finalquiz.rst:54
+#: ../../_sources/Javascript/finalquiz.rst:68
+#: ../../_sources/Javascript/finalquiz.rst:105
+#: ../../_sources/Javascript/finalquiz.rst:119
+#: ../../_sources/Javascript/finalquiz.rst:133
+#: ../../_sources/Javascript/finalquiz.rst:156
+msgid "Yes"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:27
+msgid "close"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:27
+msgid "style is for CSS"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:27
+msgid "no"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:26
+msgid "Q-1: Inside which HTML tag do we put Javascript code?"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:40
+msgid "#demo.innerHTML = \"Hello World!\";"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:40
+msgid "document.appendChild(\"p\").innerHTML = \"Hello World!\";"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:40
+msgid "document.getElement(\"p\").innerHTML = \"Hello World!\";"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:40
+msgid "document.querySelector(\"#demo\").innerHTML = \"Hello World!\";"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:40
+msgid "No, this is an error"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:40
+#: ../../_sources/Javascript/finalquiz.rst:40
+msgid "No"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:40
+#: ../../_sources/Javascript/finalquiz.rst:91
+msgid "Yes!"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:39
+msgid "Q-2: Which is the correct statement to change the following: ``<p id=\"demo\">This is a demonstration.</p>``"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:54
+msgid "onchange"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:54
+msgid "onclick"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:54
+msgid "onmouseover"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:54
+msgid "onmouseclick"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:54
+msgid "No, this would work only with input elements"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:54
+msgid "No, this event does not require a click"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:54
+msgid "No, this is not an event"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:52
+msgid "Q-3: Which event occurs when the user clicks on an HTML element?"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:68
+msgid "document.body.ol.innerHTML = \"&lt;li&gt;\""
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:68
+msgid "myLi = \"#newli\""
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:68
+msgid "document.createElement(\"li\")"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:68
+msgid "myOl.appendChild(\"li\")"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:68
+msgid "No, There is no document.body.ol"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:68
+msgid "This just assigns a string to a variable"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:68
+msgid "No, appendChild does not create an element"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:66
+msgid "Q-4: Which javascript statement correctly creates a new entry for a list?"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:77
+msgid "True"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:77
+msgid "False"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:77
+#: ../../_sources/Javascript/finalquiz.rst:77
+msgid "No Feedback"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:76
+msgid "Q-5: An external JavaScript file must contain the ``<script>`` tag."
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:91
+msgid "msg(\"Hello World\");"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:91
+msgid "console.log(\"Hello World\");"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:91
+msgid "alertBox(\"Hello World\");"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:91
+msgid "alert(\"Hello World\");"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:91
+msgid "No, there is no msg function"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:91
+msgid "This adds a message to the javascript console"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:91
+msgid "There is no alertBox function"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:89
+msgid "Q-6: How do you write \"Hello World\" in an alert box?"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:105
+msgid "myFunction = function()"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:105
+msgid "myFunction()"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:105
+msgid "function:myFunction()"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:105
+msgid "&lt;script&gt;function = {}&lt;/script&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:105
+msgid "No, this calls myFunction"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:105
+msgid "No, the : is wrong"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:105
+msgid "No, this is syntactically all wrong"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:103
+msgid "Q-7: How do you create a function in JavaScript?"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:119
+msgid "myTr.addParent(myRow);"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:119
+msgid "document.body.innerHTML = \"&lt;tr&gt;&lt;tr&gt;&lt;/tr&gt;&lt;/td&gt;\""
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:119
+msgid "myRow.appendChild(myTr);"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:119
+msgid "myTr.appendChild(myRow);"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:119
+msgid "There is no addParent function"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:119
+msgid "No, this changes the entire body"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:119
+msgid "No, you have parent and child backward"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:117
+msgid "Q-8: Which statement correctly adds a tr element named myTr to the DOM tree?"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:133
+msgid "&lt;script name=\"xxx.js\"&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:133
+msgid "&lt;script src=\"xxx.js\"&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:133
+msgid "&lt;script href=\"xxx.js\"&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:133
+msgid "&lt;link href=\"xxx.js\"&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:133
+msgid "No, name is mainly used with input tags"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:133
+msgid "href is used with the link tag"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:133
+msgid "No, link is used for including css"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:131
+msgid "Q-9: What is the correct syntax for referring to an external script called \"xxx.js\"?"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:156
+msgid "a1"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:156
+msgid "a2"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:156
+msgid "a3"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:156
+msgid "a5"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:156
+msgid "No, a1 is the grand parent"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:156
+msgid "No, a3 is a sibling"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:156
+msgid "No, a5 is the child of a4"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:145
+msgid "Q-10: Given the following HTML source, what is the parent of the element with the selector \"#a4\""
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:147
+msgid "<body>\n"
+"<table id=\"a1\">\n"
+"<tr id=\"a2\">\n"
+"   <td id=\"a3\">Hello</td>\n"
+"   <td id=\"a4\"><img id=\"a5\" src=\"hello.jpg\"></td>\n"
+"</tr>\n"
+"</table>\n"
+"</body>"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:161
+msgid "Programming Question"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:163
+msgid "Write a function that *each time* it is clicked will do the following:"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:165
+msgid "Turn the background of the page light blue."
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:166
+msgid "Add another H1 to the page that says \"So Long 130\""
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:167
+msgid "Changes the font color for the H1 to red"
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:169
+msgid "By each time, I mean that if the button is clicked 10 times there should be 10 H1's on the page."
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:182
+msgid ""
+msgstr ""
+
+#: ../../_sources/Javascript/finalquiz.rst:182
+msgid "&lt;html&gt;\n"
+"&lt;body&gt;\n"
+"    &lt;button onclick=\"finalquiz();\"&gt;Click Me&lt;/button&gt;\n"
+"    &lt;script type=\"text/javascript\"&gt;\n"
+"\n"
+"    &lt;/script&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+

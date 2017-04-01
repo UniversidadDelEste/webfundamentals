@@ -1,0 +1,284 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/Javascript/context.rst:2
+msgid "Creating Elements on the Fly"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:4
+msgid ""
+"The pattern in the previous example is a common one in web development.  "
+"You create a template using HTML and then you modify the template in "
+"response to events, gaining access to those elements using the "
+"``querySelector`` method."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:6
+msgid ""
+"Modifying a template only gets us so far.   In many other cases you want "
+"to add content to your page dynamically.  For example, Lets make a simple"
+" time application that records the date and time whenever you press the "
+"button."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:29
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;body&gt;\n"
+"       &lt;button onclick=\"savetime()\"&gt;Time&lt;/button&gt;\n"
+"       &lt;table id=\"timetable\"&gt;\n"
+"       &lt;/table&gt;\n"
+"       &lt;script type=\"text/javascript\"&gt;\n"
+"          savetime = function() {\n"
+"             t = document.querySelector(\"#timetable\")\n"
+"             trow = document.createElement(\"tr\")\n"
+"             td = document.createElement(\"td\")\n"
+"             contents = document.createTextNode(Date())\n"
+"             td.appendChild(contents)\n"
+"             trow.appendChild(td)\n"
+"             t.appendChild(trow)\n"
+"          }\n"
+"       &lt;/script&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:30
+msgid ""
+"Although its not a very useful application, it illustrates how we can "
+"create HTML elements in response to events.  Figure 1 shows the  DOM tree"
+" before the button is clicked."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:34
+msgid ".. image:: Javascript/Figures/tree1.svg"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:34
+msgid "Figure 1, DOM tree before click"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:36
+msgid ""
+"**Creating an Element**  The ``document.createElement`` function can be "
+"used to create any HTML element.  You can create an h1, a table, a "
+"paragraph, an input, even a button.  Once created, the new element is not"
+" yet part of our document tree. That is why we need to assign this newly "
+"created element a name.  In the example above, we create a ``tr`` and "
+"call it trow and a ``td`` which we name td.  We can assign values to any "
+"of the attributes of the element at this point."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:38
+msgid ""
+"**Creating Text**  We also used the function ``document.createTextNode`` "
+"to create the text we are going to put in the table.  We could have also "
+"used ``td.innerHTML`` to accomplish the same thing, but creating a "
+"``textNode`` is another way to do the job."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:40
+msgid ""
+"**Adding to the Tree**  Now that we have our new pieces for our page we "
+"need to put things back together.  the ``appendChild`` function allows us"
+" to add to the tree by adding children one at a time.  Figure 2 shows the"
+" new DOM tree, and shows the order in which the nodes are connected "
+"together."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:44
+msgid ".. image:: Javascript/Figures/tree2.svg"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:44
+msgid "Figure 2, DOM tree after click"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:48
+msgid "Which Button?"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:50
+msgid ""
+"Consider the following code.  We have two buttons, we would like the "
+"attach the same function to both buttons, but when we click we would also"
+" like our function to know which button was clicked."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:68
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;body&gt;\n"
+"       &lt;button onclick=\"hello()\"&gt;Button1&lt;/button&gt;\n"
+"       &lt;button onclick=\"hello()\"&gt;Button2&lt;/button&gt;\n"
+"       &lt;script type=\"text/javascript\"&gt;\n"
+"          hello = function() {\n"
+"              alert(\"Hello, who am I?\");\n"
+"          }\n"
+"       &lt;/script&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:69
+msgid ""
+"How can we modify the example so that it knows which button was clicked?"
+"  We can use a parameter."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:72
+msgid "What is ``this``?"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:74
+msgid ""
+"The parameter we can use in our example above is ``this``, which is a "
+"much used variable name in Javascript, but also quite confusing.  You can"
+" think of ``this`` as a self-reference.  This answers the \"who am I?\" "
+"question for an object.  From HTML we can pass this as a parameter to an "
+"onclick function, and because the onclick is part of the tag ``this`` "
+"refers to the tag.   Important Note:  In most cases we have said that the"
+" name of a variable does not matter;  ``this`` is the exception to that "
+"rule!"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:80
+msgid ""
+"Modify the example above so that in each case you are calling "
+"``hello(this)``.  Now in your javascript change the alert to "
+"``alert(\"Hello I am \" + me.innerHTML)``"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:83
+msgid "For comparison, lets create the same page as above but in Javascript."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:107
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;body&gt;\n"
+"       &lt;script type=\"text/javascript\"&gt;\n"
+"          var b1 = document.createElement(\"button\");\n"
+"          b1.innerHTML = \"Button1\";\n"
+"          var b2 = document.createElement(\"button\");\n"
+"          b2.innerHTML = \"Button2\";\n"
+"\n"
+"          hello = function() {\n"
+"              alert(\"Hello, who am I?\");\n"
+"          }\n"
+"\n"
+"          document.body.appendChild(b1);\n"
+"          document.body.appendChild(b2);\n"
+"          b1.onclick = hello;\n"
+"          b2.onclick = hello;\n"
+"       &lt;/script&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:108
+msgid ""
+"When we are creating elements in Javascript our task is a bit easier.  "
+"Because the ``this`` variable is automatically set for us inside the "
+"function based on the object it is attached to."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:112
+msgid "Attaching Events"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:114
+msgid ""
+"What if we want to attach an event to one of the objects we have created?"
+"  what if we want to use one function but attach it to many different "
+"elements, and have our function do something different depending on which"
+" element is clicked on?  This is the final topic for this section.  Its a"
+" tricky one, so pay close attention.  Lets start by attaching an onclick "
+"handler to each row of the table."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:142
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;body&gt;\n"
+"       &lt;button onclick=\"savetime()\"&gt;Time&lt;/button&gt;\n"
+"       &lt;table id=\"timetable\"&gt;\n"
+"       &lt;/table&gt;\n"
+"       &lt;script type=\"text/javascript\"&gt;\n"
+"          clickon = function() {\n"
+"              alert(\"Hello!\");\n"
+"          }\n"
+"          savetime = function() {\n"
+"             t = document.querySelector(\"#timetable\");\n"
+"             trow = document.createElement(\"tr\");\n"
+"             td = document.createElement(\"td\");\n"
+"             contents = document.createTextNode(Date());\n"
+"             td.appendChild(contents);\n"
+"             td.onclick = clickon;\n"
+"             trow.appendChild(td);\n"
+"             t.appendChild(trow);\n"
+"          }\n"
+"       &lt;/script&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:143
+msgid ""
+"This example has a new function called clickon, right now, all it does is"
+" pop up an alert dialog box that says Hello whenever you click on a row "
+"of the table.  The line that attaches this function to the row is "
+"``td.onclick = clickon;``  That is not a typo that line is correct.  "
+"clickon is just a name for a function so we can use that name to assign "
+"to other attributes.  It is only when the parenthesis are put after the "
+"name that we call the function."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:145
+msgid "Key Point"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:147
+msgid ""
+"When an event handler is called, it's called within the context of the "
+"element that was clicked on. So, the identifier ``this`` will refer to "
+"the DOM element that you clicked on. You can then access attributes of "
+"the element using ``this`` as the identifier.  For example "
+"``this.className`` will give the class of the element you click on."
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:149
+msgid ""
+"Using the key point from above we can change our clickme function as "
+"follows:"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:151
+msgid ""
+"clickon = function() {\n"
+"    message = this.innerText;\n"
+"    alert(\"the time is \" + message);\n"
+"    alert(\"my parent is a \" + this.parentNode.tagName)\n"
+"}"
+msgstr ""
+
+#: ../../_sources/Javascript/context.rst:159
+msgid ""
+"Modify the code in the example to match the above and then run it.  "
+"Notice that when you click on different rows of the table, you get "
+"different messages in the alert dialog box.  Notice that it also knows "
+"where it lives in the DOM tree, and can get its parent or even its "
+"siblings."
+msgstr ""
+

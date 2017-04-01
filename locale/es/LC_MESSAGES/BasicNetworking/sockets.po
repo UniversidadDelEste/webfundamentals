@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web
+# Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/BasicNetworking/sockets.rst:2
+msgid "Sockets: The Building Blocks of Network Programming"
+msgstr ""
+
+#: ../../_sources/BasicNetworking/sockets.rst:5
+msgid ""
+"How is it that two programs each running on their own computer can "
+"communicate with each other?  This is, of course, what happens many times"
+" a day when your browser shows you a web page.  Your browser is a "
+"program, and it must communicate with a web server in order to get the "
+"HTML, CSS, images, and Javascript that make up a web page.  The details "
+"of how this simple communication happens can take an entire semester in a"
+" Networking course.  We are going to tackle just the top layer of this "
+"problem looking at the application layer of the Networking stack."
+msgstr ""
+
+#: ../../_sources/BasicNetworking/sockets.rst:7
+msgid ""
+"The building block of the application layer is the socket.  Sockets "
+"provide for easy two way communication between two programs running on "
+"two different computers (or hosts).  A socket is uniquely identified by "
+"four values:"
+msgstr ""
+
+#: ../../_sources/BasicNetworking/sockets.rst:9
+msgid "source ip address"
+msgstr ""
+
+#: ../../_sources/BasicNetworking/sockets.rst:10
+msgid "source port"
+msgstr ""
+
+#: ../../_sources/BasicNetworking/sockets.rst:11
+msgid "destination ip address"
+msgstr ""
+
+#: ../../_sources/BasicNetworking/sockets.rst:12
+msgid "destination port"
+msgstr ""
+
+#: ../../_sources/BasicNetworking/sockets.rst:14
+msgid ""
+"These values need some definition.  First, what do we mean by an IP "
+"address?  You already know that the computers on the internet have nice "
+"memorable names like www.google.com or knuth.luther.edu.  Each name can "
+"be translated into a unique IP numerical IP address, such as "
+"192.203.196.71, only 1 machine on the internet can have the IP address of"
+" 192.203.196.71  (however, that address can be known by multiple names)."
+"   The numerical addresses are necessary for the machinery of the "
+"internet to do the work of getting a message from one machine to the "
+"other."
+msgstr ""
+
+#: ../../_sources/BasicNetworking/sockets.rst:16
+msgid ""
+"The port number is important because one computer may have many programs "
+"running each corresponding to a different network service.  For example "
+"the web server runs on port 80 while the mail server runs on port 25 and "
+"the ssh server runs on port 22.  So the port identifies which program on "
+"the computer the socket is connected to.  On your laptop, the situation "
+"is similar, you may have a web browser connected to many different web "
+"servers in differnt tabs, you have a mail client connected to a mail "
+"server, and you probably have an message client connected to a chat "
+"server, etc."
+msgstr ""
+

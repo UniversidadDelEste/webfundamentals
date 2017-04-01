@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/CGI/cookies.rst:2
+msgid "Cookies"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:None
+msgid ".. image:: CGI/Figures/Double-Stuf-Oreos.jpg"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:8
+msgid "HTTP is a stateless protocol.  This means that from one request to the next HTTP does not know anything about the state of the webpage you are looking at.  This is a good thing, from the perspective of scale, but it does provide some challenges as well.  How does the server \"know\" your name every time you come back to Google or Amazon?"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:10
+msgid "The answer is, of course, cookies.  Early on they were called \"magic cookies,\" but lately that has been shortened to just cookies.  A cookie is a small chunk of information (maximum 4096 bytes) that the web **browser** stores on behalf of the web **server.**  The information is sent to the server from the browser along with every request."
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:12
+msgid "The cookie information is transferred back and forth as part of the header in the request and the response.  The server asks the browser to store some information using a ``Set-Cookie`` header, and the browser gives the information back to the server using a ``cookie`` header."
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:14
+msgid "Here is an example of a Set-Cookie header:"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:18
+msgid "HTTP/1.0 200 OK\n"
+"Content-type: text/html\n"
+"Set-Cookie: name=value; Expires=Wed, 09 Jun 2021 07:21:14 GMT; Path=/"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:23
+msgid "Besides the name value pair for storing your application data, cookies may have the following attributes:"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:25
+msgid "Expires -- How long should the browser store this cookie?  By default the cookie will only be stored as long as the browser is open.  When you quit and restart the browser the cookie will be gone.  However you can set a date in the future that will cause the browser to store the cookie until that time."
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:26
+msgid "Domain -- By defualt, the browser should only return the cookie to the domain that issued it.  For example, www.luther.edu  However the server may set luther.edu as the domain so that the cookie will be supplied to any server inside the luther.edu domain."
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:27
+msgid "Path -- By default the path is / such that any URI on the server will get the cookie, but the server may restrict this by setting a path such as /api so that only requests that begin with /api will receive the cookie."
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:29
+msgid "The browser supplies the cookie information back to the server using a header like this:"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:33
+msgid "GET /interactivepython.html HTTP/1.1\n"
+"Host: www.luther.edu\n"
+"Cookie: name=value; name2=value2\n"
+"Accept: */*"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:39
+msgid "Let us make one final modification to our hello world cgi program and store the users name in a cookie.  This will allow us to avoid asking the user their name every time."
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:41
+msgid "Our program logic gets just a bit more complicated yet again as now we need to check the ``QUERY_STRING`` to see if the name has been supplied there, and we also need to check for the cookie.  Cookie information is supplied to the CGI program through the environment variable ``HTTP_COOKIE``.  The helper functions do not change, but the main logic of our program now looks like this:"
+msgstr ""
+
+#: ../../_sources/CGI/cookies.rst:43
+msgid "cookies = os.environ['HTTP_COOKIE']\n"
+"if not qs:\n"
+"    if cookies and 'firstname' in cookies:\n"
+"        sendHeaders()\n"
+"        cvalues = cookies.split(';')\n"
+"        for c in cvalues:\n"
+"            if 'firstname' in c:\n"
+"                name = c.split('=')[1]\n"
+"        sendPage(name)\n"
+"    else:\n"
+"        sendHeaders()\n"
+"        sendForm()\n"
+"else:\n"
+"    if 'firstname' in qs:\n"
+"        name = qs.split('=')[1]\n"
+"        headers.append(\"Set-Cookie: firstname=%s\" % name)\n"
+"    else:\n"
+"        name = 'No Name Provided'\n"
+"    sendHeaders()\n"
+"    sendPage(name)"
+msgstr ""
+

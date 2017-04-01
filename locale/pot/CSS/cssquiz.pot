@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/CSS/cssquiz.rst:2
+msgid "Quiz Two"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:22
+msgid "&lt;h1&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:22
+msgid "&lt;p&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:22
+msgid "&lt;img&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:22
+msgid "&lt;li&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:22
+#: ../../_sources/CSS/cssquiz.rst:22
+#: ../../_sources/CSS/cssquiz.rst:22
+#: ../../_sources/CSS/cssquiz.rst:36
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:71
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:104
+#: ../../_sources/CSS/cssquiz.rst:119
+#: ../../_sources/CSS/cssquiz.rst:119
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "Yes"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:22
+msgid "No, an img tag is an inline element"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:21
+msgid "Q-1: Which of the following are HTML block elements.  Select all that apply."
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:36
+msgid "File Transfer Protocol"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:36
+msgid "HyperText Markup Language"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:36
+msgid "Secure Sockets Layer"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:36
+msgid "HyperText Transfer Protocol"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:36
+msgid "No, FTP is not related to this class."
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:36
+msgid "No, HTML is the markup language not the protocol"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:36
+msgid "No, SSL is not used"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:34
+msgid "Q-2: What is the protocol used in the URL:  ``http://interactivepython.org/index.html``"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:37
+msgid "In the following question, select all of the correct answers for each question."
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:71
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "&lt;h1 class=\"low\"&gt;Hello World&lt;/h1&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:71
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "&lt;p class=\"high\"&gt;some text&lt;/p&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:71
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "&lt;p&gt;some text&lt;/p&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:71
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "&lt;li class=\"high\"&gt;do my homework&lt;/li&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:71
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "&lt;p id=\"high\"&gt;some text&lt;/p&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:71
+msgid "This h1 has low class"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:54
+#: ../../_sources/CSS/cssquiz.rst:71
+msgid "No, the paragraph tag is just a plain paragraph with no class"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:54
+msgid "No the selector is matching the class not the id."
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:53
+msgid "Q-3: Which of the following will match the CSS selector ``.high``"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:71
+#: ../../_sources/CSS/cssquiz.rst:87
+msgid "No, this is an li tag"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:71
+msgid "No, this selector is looking for a paragraph with a class of high"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:69
+msgid "Q-4: Which of the following will match the CSS selector ``p.high``"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:87
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "No this is an h1 tag"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:86
+msgid "Q-5: Which of the following will match the CSS selector ``p``"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "No, this selector is matching the id attribute"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "No, this selector is looking for an id"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:104
+msgid "No, this selector is matching on the id not the class"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:102
+msgid "Q-6: Which of the following will match the CSS selector ``#high``"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "height"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "padding"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "border"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "margin"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "background-color"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "No height is an attribute of the content"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "No, background-color is not part of the box model"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:119
+msgid "Q-7: Which of the following are properties of the CSS Box Model"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:122
+msgid "When you have finished the above question, click on the Show button below to reveal two additional exercises."
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:124
+msgid "For the following questions, I will use your final result.  You can press the Run button as many times as you like without penalty.  You should also Save your final version."
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:151
+msgid "data-showtitle=\"Show Final Questions\""
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:130
+msgid "Fill in the additional HTML needed to make an ordered list of 3 items.  The items should be numbered A, B, and C."
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:138
+#: ../../_sources/CSS/cssquiz.rst:151
+msgid ""
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:138
+msgid "&lt;html&gt;\n"
+"\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:139
+msgid "Given the HTML in the activecode below, add the appropriate CSS to style the h1 with a 28pt font, and rgb color consisting of red: 128, blue: 200, green: 99 and the *last* paragraph with a color of orange."
+msgstr ""
+
+#: ../../_sources/CSS/cssquiz.rst:151
+msgid "&lt;html&gt;\n"
+"   &lt;body&gt;\n"
+"      &lt;h1&gt;Learning about HTML&lt;/h1&gt;\n"
+"      &lt;p&gt;HTML is a fun and easy language to learn&lt;/p&gt;\n"
+"      &lt;h2&gt;Learning about CSS&lt;/h2&gt;\n"
+"      &lt;p class=\"css\"&gt; CSS is fun too, but more challenging than HTML&lt;/p&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+

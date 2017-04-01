@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web
+# Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/WWW/intro.rst:6
+msgid "Introduction"
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:8
+msgid ""
+"You are reading this introduction, probably in a browser of some kind. "
+"Maybe on your tablet, maybe on your smartphone, or maybe on a regular old"
+" desktop computer.  The key question we want to answer in this chapter is"
+" how does this page get to your screen?  It turns out there is an awful "
+"lot of computer science involved.  We won't go very deep, this is only "
+"the first chapter, in a book that is meant to be introductory in nature "
+"after all."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:11
+msgid ""
+"For now we'll start out with a very high level overview and move down a "
+"little deeper later in the chapter.   The page you are seeing is the "
+"result of a **web browser** communicating with a **web server**.  A "
+"number of important things happen during the comversation."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:13
+msgid ""
+"The browser and the server \"talk\" to each other using a relatively "
+"simple **protocol** called **HTTP**, which stands for the Hyper Text "
+"Transfer Protocol."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:14
+msgid "If we break down HTTP into its two components we get a little more detail:"
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:16
+msgid ""
+"Hyper Text - The idea of hyper text is that it links you from one page to"
+" another (we used to call the links (hyperlinks) but that has been "
+"shortened to just links.  However, the concept of Hyper Text is central "
+"to this course in that the specific text that is transferred follows a "
+"standard called the **Hyper Text Markup Language** (HTML)."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:18
+msgid ""
+"Transfer Protocol - when two programs want to talk to each other both "
+"programs have to \"speak the same language.\"  A protocol is a very "
+"specific description of a series of messages that two programs use to "
+"communicate."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:20
+msgid ""
+"The web server sends the HTML to the browser over the internet and the "
+"browser **renders** the HTML into the nicely formatted page that you see "
+"on your screen."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:22
+msgid ""
+"At the beginning of the World Wide Web there was only HTML, and web pages"
+" were a bit drab compared to what we are used to seeing today.  Now "
+"modern web pages rely on three technologies, which will be the main focus"
+" of this book."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:24
+msgid ""
+"HTML -- Hyper Text Markup Language -- HTML describes the content of the "
+"page, giving the page some sctructure including common things like "
+"headings, and sections, and lists of things."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:25
+msgid ""
+"CSS -- Cascading Style Sheets -- CSS desribes the \"look\" of the page, "
+"the colors, the fonts, the margins, etc."
+msgstr ""
+
+#: ../../_sources/WWW/intro.rst:26
+msgid ""
+"Javascript is used to change the behavior of the page.  What happens when"
+"  you click on a button, or scroll a scrollbar, or hover over something "
+"with your mouse."
+msgstr ""
+

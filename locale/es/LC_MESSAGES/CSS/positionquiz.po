@@ -1,0 +1,66 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/CSS/positionquiz.rst:2
+msgid "Positioning Quiz"
+msgstr ""
+
+#: ../../_sources/CSS/positionquiz.rst:4
+msgid ""
+"Today's quiz has only one question, you may use your textbook to refer to"
+" as well as other examples you may have saved from class.  I will use "
+"only your final result, so don't forget to save.   This may prove to be "
+"quite challenging, but don't worry, I will give plenty of partial credit."
+msgstr ""
+
+#: ../../_sources/CSS/positionquiz.rst:32
+msgid "data-showtitle=\"Show\""
+msgstr ""
+
+#: ../../_sources/CSS/positionquiz.rst:8
+msgid "Starting with the HTML I give you, you must recreate the image below."
+msgstr ""
+
+#: ../../_sources/CSS/positionquiz.rst:32
+msgid ".. image:: CSS/Figures/quiz2b.png"
+msgstr ""
+
+#: ../../_sources/CSS/positionquiz.rst:12
+msgid ""
+"Dimensions:  The green box is 400px wide and 300px high and is centered "
+"with a top margin of 50px.  The pink boxes are 150px high and 150px wide."
+"  The are positioned 20px from the edges of the green box.  The text in "
+"the pink boxes is centered and is 20px from the top of the pink box."
+msgstr ""
+
+#: ../../_sources/CSS/positionquiz.rst:32
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"     &lt;style&gt;\n"
+"     &lt;/style&gt;\n"
+"   &lt;/head&gt;\n"
+"      &lt;body&gt;\n"
+"          &lt;main&gt;\n"
+"          &lt;nav&gt;\n"
+"              &lt;h2&gt;Happy Thanksgiving&lt;/h2&gt;\n"
+"          &lt;/nav&gt;\n"
+"          &lt;aside&gt;\n"
+"              &lt;h2&gt;Let it Snow&lt;/h2&gt;\n"
+"          &lt;/aside&gt;\n"
+"          &lt;/main&gt;\n"
+"      &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+

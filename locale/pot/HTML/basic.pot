@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/HTML/basic.rst:2
+msgid "Basic HTML Tags"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:5
+msgid "Headings"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:7
+msgid "Like any document HTML documents may have several layers of headings.  In fact you can have heading levels from 1 to 6 in an HTML document."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:16
+#: ../../_sources/HTML/basic.rst:41
+#: ../../_sources/HTML/basic.rst:69
+#: ../../_sources/HTML/basic.rst:89
+#: ../../_sources/HTML/basic.rst:117
+msgid ""
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:16
+msgid "&lt;h1&gt;Level one&lt;/h1&gt;\n"
+"&lt;h2&gt;Level two&lt;/h2&gt;\n"
+"&lt;h3&gt;Level three&lt;/h3&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:17
+msgid "Now modify the example above to add the next three levels of headings.  What do you notice?  What happens if you add a level 7 heading?   What happens if you close an h2 tag with an h1 or an h3?"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:24
+msgid "data-showtitle=\"Show\""
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:21
+msgid "As you might expect, the headings continue to get smaller as you go from 1 to 6.  But when you go to level 7 the text gets bigger.  This is because the web browser is written so that it just ignores any tags that it does not know about.  This is somewhat of a disadvantage as you don't get any error messages, things just look wrong, and you have to figure out why."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:25
+msgid "Another aspect of the heading tag is that it is what we call a **block** tag.  Notice that each heading appears on its own line.  Thats pretty much what we would expect for a heading.  But not necessarily for other tags.  shortly, we will see some **inline** tags that do not each appear on their own line."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:29
+msgid "Paragraphs"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:31
+msgid "Paragraphs are another funamental element of documents.  Paragraphs are also another example of a block element in that each paragraph gets its own space and is separated from other html elements by blank lines in the document."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:41
+msgid "&lt;p&gt;This is a short sentence.&lt;/p&gt;\n"
+"&lt;p&gt;This is a paragraph.  What happens when we have a really really really long line that takes up more than one line of the browser? &lt;/p&gt;\n"
+"&lt;p&gt;Level this is a short sentence&lt;/p&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:42
+msgid "What happens when you put a paragraph inside another paragraph?  What about a header inside a paragraph?"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:46
+msgid "Images"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:48
+msgid "Images are another common element of a document or a web page.  To include an image in a document you must use an ``img`` tag.  Image tags are an example of an **inline** element because they just flow in with the surrounding text.  They do not force a new block to be created in the rendering of the html.  Here are a couple of images:"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:52
+msgid ".. image:: HTML/Figures/LutherBellPic.jpg"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:52
+msgid "Luther Bell:  ``http://interactivepython.org/runestone/static/webfundamentals/_images/LutherBellPic.jpg``"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:56
+msgid ".. image:: HTML/Figures/norse-logo.png"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:56
+msgid "Norse Logo:  ``http://interactivepython.org/runestone/static/webfundamentals/_images/norse-logo.png``"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:59
+msgid "The image tag has a new component to it called an attribute.  In general tags can have many attributes in the case of an image we can inlude it by using a ``src`` attribute that contains the URL to the image we want to embed.  We can embed any image on the internet in our own document by referring to it by its URL in the ``src`` attribute."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:69
+msgid "&lt;h1&gt;Embedded Images&lt;/h1&gt;\n"
+"&lt;p&gt;Images are inline elements they fit in the flow\n"
+"&lt;img src=\"http://interactivepython.org/runestone/static/webfundamentals/_images/LutherBellPic.jpg\"&gt;\n"
+"of a paragraph without causing extra line breaks.&lt;/p&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:70
+msgid "Try modifying the example above so that it includes the norse logo rather than the bell. You can also change the height and width of  an image by using a ``height=`` attribute or a ``width=`` attribute.  Try changing the size of the image in the example above.  Notice what it does to the flow.  Try changing just one of height or width and then try changing both at the same time.  You can stretch your image in all kinds of crazy ways."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:73
+msgid "There are several other attributes of the image tag as well.  You can read about them `here <http://www.w3schools.com/tags/tag_img.asp>`_."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:77
+msgid "Links"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:79
+msgid "The last basic link to cover in this section is the link tag ``a``.  In fact the last sentence of the previous section used a link to send you to the w3schools website to learn more about the attributes of an ``img`` tag.  Links are what made the web so popular in the first place.  Today we call them links, but in earlier years they were usually referred to as Hyperlinks. You can provide a link to any URL on the web using the ``href`` attribute on the ``a`` tag.   The text that you will click on goes between the opening ``a`` tag and the closing ``a`` tag."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:89
+msgid "&lt;h1&gt;Links make the web!&lt;/h1&gt;\n"
+"&lt;p&gt;Links are another inline element.  You can read about links and their attributes\n"
+"&lt;a href=\"http://www.w3schools.com/tags/tag_a.asp\"&gt;Here&lt;/a&gt; on the w3schools website.&lt;/p&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:90
+msgid "Try clicking on the link in the example above.  What happens?  How do you get back?   Don't worry, you can always just reload this page."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:92
+msgid "Links can also be used to navigate within the same page.  to do this you use one ``a`` tag to create an anchor point on the page using the name attribute like this:  ``<a name=\"target\">I am a target</a>``  You can create a link that will jump to the target anywhere else on the page using ``<a href=\"#target\">Go to Target</a>``"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:98
+msgid "Simple Text Formatting"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:100
+msgid "Making text bold or italic and other formatting is easy in HTML as well.  The following example illustrates the basic text formatting tags."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:117
+msgid "&lt;html&gt;\n"
+"&lt;body&gt;\n"
+"\n"
+"&lt;p&gt;&lt;b&gt;This text is bold&lt;/b&gt;&lt;/p&gt;\n"
+"&lt;p&gt;&lt;strong&gt;This text is strong&lt;/strong&gt;&lt;/p&gt;\n"
+"&lt;p&gt;&lt;i&gt;This text is italic&lt;/i&gt;&lt;/p&gt;\n"
+"&lt;p&gt;&lt;em&gt;This text is emphasized&lt;/em&gt;&lt;/p&gt;\n"
+"&lt;p&gt;&lt;code&gt;This is computer output&lt;/code&gt;&lt;/p&gt;\n"
+"&lt;p&gt;This is&lt;sub&gt; subscript&lt;/sub&gt; and &lt;sup&gt;superscript&lt;/sup&gt;&lt;/p&gt;\n"
+"&lt;p&gt;This &lt;br /&gt; forces &lt;br /&gt; a &lt;br /&gt; line break &lt;/p&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:118
+msgid "You can mix and match these styles in all kinds of ways.  Try making a superscript inside a superscript.  Try making the subscript bold or italic."
+msgstr ""
+
+#: ../../_sources/HTML/basic.rst:121
+msgid "**Check your Understanding**"
+msgstr ""
+

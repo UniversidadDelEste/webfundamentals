@@ -1,0 +1,330 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/CSS/styleattributes.rst:2
+msgid "Changing the Style of an HTML Element"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:4
+msgid "There are many ways that we can change the style of what we see in the browser.  In this section we will look at examples of the following:"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:6
+msgid "background"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:7
+msgid "text"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:8
+msgid "font"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:10
+msgid "But before we talk about these, we need to think about colors.  There are three different ways to specify the color."
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:12
+msgid "by name, like blue, red, green.  You can see a complete list of `color names <http://www.w3schools.com/cssref/css_colors.asp>`_ on the w3schools website."
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:13
+msgid "using an RGB value like ``rgb(255,0,0)``"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:14
+msgid "using a HEX value like ``#ff0000``"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:16
+msgid "Using either the RGB or the HEX value gives you total control to specify any of of 16 million different colors.  There is a bit of interesting computer science behind the RGB and HEX values.  The rgb function lets you specify a value between 0 and 255 for each component of red, green, and blue.  By mixing together a certain amount of red, green, and blue you can create :math:`255 \\cdot 255 \\cdot 255` different colors, which is slightly more than 16.5 million.  Now where does the number 255 come from?  It is one less than :math:`2^8`.  Computer scientists like powers of two because when you get deeply into the inner workings of the computer you see that everything is in binary (ones or zeros) which we call bits.  With eight bits we can specify 256 different values or 0 -- 255.  We call eight bits one byte."
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:18
+msgid "Now the HEX specification of the number is directly related to the binary as follows:"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:21
+msgid "binary"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:21
+msgid "hex"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:21
+msgid "decimal"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:23
+msgid "0000"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:23
+#: ../../_sources/CSS/styleattributes.rst:23
+msgid "0"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:24
+msgid "0001"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:24
+#: ../../_sources/CSS/styleattributes.rst:24
+msgid "1"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:25
+msgid "0010"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:25
+#: ../../_sources/CSS/styleattributes.rst:25
+msgid "2"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:26
+msgid "0011"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:26
+#: ../../_sources/CSS/styleattributes.rst:26
+msgid "3"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:27
+msgid "0100"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:27
+#: ../../_sources/CSS/styleattributes.rst:27
+msgid "4"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:28
+msgid "0101"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:28
+#: ../../_sources/CSS/styleattributes.rst:28
+msgid "5"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:29
+msgid "0110"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:29
+#: ../../_sources/CSS/styleattributes.rst:29
+msgid "6"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:30
+msgid "0111"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:30
+#: ../../_sources/CSS/styleattributes.rst:30
+msgid "7"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:31
+msgid "1000"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:31
+#: ../../_sources/CSS/styleattributes.rst:31
+msgid "8"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:32
+msgid "1001"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:32
+#: ../../_sources/CSS/styleattributes.rst:32
+msgid "9"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:33
+msgid "1010"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:33
+msgid "a"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:33
+msgid "10"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:34
+msgid "1011"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:34
+msgid "b"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:34
+msgid "11"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:35
+msgid "1100"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:35
+msgid "c"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:35
+msgid "12"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:36
+msgid "1101"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:36
+msgid "d"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:36
+msgid "13"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:37
+msgid "1110"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:37
+msgid "e"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:37
+msgid "14"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:38
+msgid "1111"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:38
+msgid "f"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:38
+msgid "15"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:41
+msgid "When specifying a color using the HEX system the first two characters are for the red, the second two for the green, and the last are for the blue.  There are lots of color picking tools that you can use that will let you choose the color you want and then tell you the appropriate hex value."
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:45
+msgid "Background"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:47
+msgid "CSS has the following properties which we can use to change the background."
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:49
+msgid "background-color"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:50
+msgid "background-image"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:51
+msgid "background-repeat"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:52
+msgid "background-attachment"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:53
+msgid "background-position"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:78
+msgid ""
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:78
+msgid "&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      h1 {\n"
+"         color: blue;\n"
+"         font-size: 28pt;\n"
+"      }\n"
+"      body {\n"
+"          background-image: url(\"http://m.99wallpaper.com/images/7_1306/Black%20Background%20Wood%20-%202560x1600%20by%20Freeman.jpg\")\n"
+"      }\n"
+"      &lt;/style&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"      &lt;h1&gt;Hello World!!&lt;/h1&gt;\n"
+"      &lt;p&gt;The paragraph text should be unchanged&lt;/p&gt;\n"
+"      &lt;h2&gt;I am not blue!&lt;/h2&gt;\n"
+"      &lt;h1&gt;Hello Again&lt;/h1&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:80
+msgid "Text"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:82
+msgid "text-color"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:83
+msgid "text-align"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:84
+msgid "text-decoration"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:85
+msgid "text-transformation"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:88
+msgid "Font"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:90
+msgid "font-family"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:91
+msgid "font-style"
+msgstr ""
+
+#: ../../_sources/CSS/styleattributes.rst:92
+msgid "font-size"
+msgstr ""
+

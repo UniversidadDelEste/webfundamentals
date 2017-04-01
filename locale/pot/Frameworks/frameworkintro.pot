@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Frameworks/frameworkintro.rst:2
+msgid "Toward Modern Web Development"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:4
+msgid "A web framework is a software framework designed to simplify web development. Frameworks exist to save you from having to re-invent the wheel and reduce your workload when you are building a new site."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:6
+msgid "In this chapter we will look at some of the components of a web framework, and introduce some Python packages that implement those components.  Finally, we will introduce the Flask micro-framework which will tie together the individual components into a comprehensive whole."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:8
+msgid "Some of the components we will consider in the coming chapters include:"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:10
+msgid "Template Engines"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:11
+msgid "Object Relational Mapping libraries"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:12
+msgid "Routing or URL mapping"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:13
+msgid "Form creation and processing"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:14
+msgid "controllers that do not force you to write a separate Python program for every request."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:15
+msgid "Helper objects for decoding QUERY_STRINGS and managing Cookies and Sessions."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:18
+msgid "Templates"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:20
+msgid "If you have tried even one server side web project, you may already have recognized that there is a certain amount of tedium in developing pages.  First and formost among these are print statements!  Really, I can hear you say, \"we really have to use print statements for everything when we make a web page?\"  Although triple quoted strings are certainly one way to reduce some of the tedium, things can get really complicated when you need to concatenate together really big strings that have embedded quotes want to insert values from variables."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:22
+msgid "To solve this problem all web frameworks include a **template** engine.  Temmplates allow you to create files that are a simple mix of HTML and placeholders.  The template engine fills in the placeholders with values from your application."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:26
+msgid "Databases"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:28
+msgid "Another big problem that all web frameworks solve is the persistence problem.  Its fine to write applications that have variables, but variables only exist for the life of the program.  Web servers are reliable, but they go down and need to be restarted fairly frequently.  So, there needs to be a way to store and retrieve information from long term storage.  I'm talking about databases here.  The authors of web frameworks realized very early on that web programmers did not want to become database experts in addition to everything else they have they have to know, so web frameworks provide an Object Relational Mapper, that makes it easy to go back and forth between the database and your Python application."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:30
+msgid "There are also an increasing number of non-relational databases that go under the heading of NOSQL databases that are used in web applications."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:34
+msgid "Forms Processing"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:36
+msgid "Creating forms is tedious in the extreme, and it turns out to be quite easy to automate.  Most frameworks therefore provide an easy way to map database tables or simple Python objects to forms.  When one of these automatically generated forms is submitted, the framework can take care of validating the submitted data as well as storing it in the database."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:38
+msgid "It sounds like there's almost no work left to do!  And that is the point, of frameworks to make it easy to get something minimal up and running very quickly!"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:41
+msgid "Flask"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:43
+msgid "To conclude this introductory section we will look at the Flask framework.  We will take one more lap through the hello world app from the CGI chapter and see how we would write this with a mimum amount of help from the framework.  At the end of all this we'll see how little work it would take to do our full hello world application using all of the components of the framework."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:45
+msgid "But First..."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:47
+msgid "Installing a Virtual Environment and Flask"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:49
+msgid "For your own development purposes it is good to get in the habit of using a virtual environment.  Using Python 3.4 it is really easy."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:51
+msgid "Make a Folder in your home directory called Environments"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:52
+msgid "run the command ``pyvenv-3.4 ~/Environments/flaskenv``"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:53
+msgid "Now run the command ``. ~/Environments/flaskenv/bin/activate``  This activates the python virtual environment and sets up everything so that you will run a special Python contained in the virtual environment.  Best of all you now have permission to install any third party python packages into your own virtual environment without needing root permission."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:54
+msgid "run ``pip install flask``"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:56
+msgid "After installing flask you can verify that everything is good by running ``pip list`` you should see the following::"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:66
+msgid "from flask import Flask\n"
+"app = Flask(__name__)\n"
+"app.debug = True\n"
+"\n"
+"@app.route('/')\n"
+"def hello_world():\n"
+"    return '<h1>Hello World!</h1>'\n"
+"\n"
+"@app.route('/user/<name>')\n"
+"def hello_user(name):\n"
+"   return '<h1>Hello {0}</h1>'.format(name)\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    app.run()"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:84
+msgid "Now, this is not anywhere close to our previous example (yet), but this short program gives us plenty to go on.  The first thing we want to do is to run this and give it a test.  It is really easy to do.  If you save the code above to a file ``helloflask.py``  all you need to do is run ``python3 helloflask.py``.  This command starts up a web server and will respond to requests on port 5000 by default.  In your browser try the following:  ``http://localhost:5000/`` You should see Hello World!  Now try ``http://localhost:5000/user/Me``, in this case you should see ``Hello Me``."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:86
+msgid "The two pages you just viewed are an example of URL Routing, and is a fundamental aspect of any web development framework.  The URL / maps to the function ``hello_world`` and the the URL /user/<your name here> maps to the hello_user function.  The key to this is the ``@app.route`` decorator.  By adding this decorator before a function you can set up any function to be called in response to a user submitting a URL."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:88
+msgid "Wait, what's a decorator?"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:90
+msgid "Thanks for asking! We will cover decorators in the next section, but the truth is you could live a happy productive life using Flask if you only understood that By placing ``@app.route('/path/to/something')`` on a line by itself before a function definition will cause that function to be called in response to a URL matching the pattern in parenthesis!"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:92
+msgid "Also you should notice that the functions do not use print, but rather return an **iterable**.  In this case a string.  This is because Flask is one of many frameworks built around Python's WSGI standard.  We'll cover WSGI in another section, but you should know that any function that returns an iterable can be used as a response to a GET request."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:94
+msgid "Now lets look at a Flask-ified version of our hello program."
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:96
+msgid "from flask import Flask, request\n"
+"app = Flask(__name__)\n"
+"app.debug = True   # need this for autoreload as and stack trace\n"
+"\n"
+"\n"
+"@app.route('/')\n"
+"def hello_world():\n"
+"    return 'Hello World!'\n"
+"\n"
+"@app.route('/user/<name>')\n"
+"def hello_user(name):\n"
+"    return '<h1>Hello {0}<h1>'.format(name)\n"
+"\n"
+"@app.route('/hello')\n"
+"def hello_form():\n"
+"    if 'firstname' in request.args:\n"
+"        return sendPage(request.args['firstname'])\n"
+"    else:\n"
+"        return sendForm()\n"
+"\n"
+"def sendForm():\n"
+"    return '''\n"
+"    <html>\n"
+"      <body>\n"
+"          <form method='get'>\n"
+"              <label for=\"myname\">Enter Your Name</label>\n"
+"              <input id=\"myname\" type=\"text\" name=\"firstname\" value=\"Nada\" />\n"
+"              <input type=\"submit\">\n"
+"          </form>\n"
+"      </body>\n"
+"    </html>\n"
+"    '''\n"
+"\n"
+"def sendPage(name):\n"
+"    return '''\n"
+"    <html>\n"
+"      <body>\n"
+"        <h1>Hello {0}</h1>\n"
+"      </body>\n"
+"    </html>\n"
+"    '''.format(name)\n"
+"\n"
+"if __name__ == '__main__':\n"
+"   app.run()"
+msgstr ""
+
+#: ../../_sources/Frameworks/frameworkintro.rst:144
+msgid "Here is where things start to get better.  We no longer have to worry about environment variables, instead Flask provides us with a ``request`` object.  The request object contains pre-processed attributes that contain all of the information we could possibly want from a form submission.  The ``args`` attribute is a dictionary containing keys for all of the names in a submitted form."
+msgstr ""
+

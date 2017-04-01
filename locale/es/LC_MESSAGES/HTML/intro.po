@@ -1,0 +1,239 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/HTML/intro.rst:2
+msgid "The HyperText Markup Language"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:4
+msgid ""
+"As we noted in the previous chapter, HTML is the language of the web for "
+"expressing content. But before we dive into the specifics of HTML, lets "
+"look at what we mean by a markup language in general.  A markup language "
+"is a language that **annotates** text so that the computer can manipulate"
+" it for some purpose.  Most markup languages are readable by humans and "
+"are designed to be written with a plain text editor as rather than a "
+"fancy word processor like Microsoft Word."
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:6
+msgid ""
+"This book is written using a markup language called `restructuredText "
+"<//http://sphinx-doc.org/rest.html>`_ restructuredText is similar to "
+"another very popular markup language called `Markdown "
+"<http://daringfireball.net/projects/markdown/syntax>`_.  Both of these "
+"languages are designed to be easily readable by humans, and yet easily "
+"translate into our language of choice for this class, HTML.  Now you know"
+" about three markup languages:"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:8
+msgid "HTML"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:9
+msgid "Markdown"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:10
+msgid "restructuredText"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:12
+msgid ""
+"The restructutedText markup for the content in this chapter so far looks "
+"like this:"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:14
+msgid ""
+"The HyperText Markup Language\n"
+"=============================\n"
+"\n"
+"As we noted in the previous chapter, HTML is the language of the web for "
+"expressing content. But before we dive into the specifics of HTML, lets "
+"look at what we mean by a markup language in general.  A markup language "
+"is a language that **annotates** text so that the computer can manipulate"
+" it for some purpose.  Most markup languages are readable by humans and "
+"are designed to be written with a plain text editor as rather than a "
+"fancy word processor like Microsoft Word.\n"
+"\n"
+"This book is written using a markup language called `restructuredText "
+"<//http://sphinx-doc.org/rest.html>`_ restructuredText is similar to "
+"another very popular markup language called `Markdown "
+"<http://daringfireball.net/projects/markdown/syntax>`_.  Both of these "
+"languages are designed to be easily readable by humans, and yet easily "
+"translate into our language of choice for this class, HTML.  Now you know"
+" about three markup languages:\n"
+"\n"
+"* HTML\n"
+"* Markdown\n"
+"* restructuredText\n"
+"\n"
+"The restructutedText markup for the content in this chapter so far looks "
+"like this:"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:30
+msgid ""
+"The annotations in the restructuredText are pretty unobtrusive, and "
+"actually add to the readability of the plain text in most cases.  For "
+"example the ``===`` below the title of this chapter indicate that it is, "
+"in fact a title or heading.  regular paragraphs require no extra "
+"annotation.  To make something bold you surround it by double asterisks."
+"  If you want to make a bullet list, you just start the line with an "
+"asterisk."
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:32
+msgid ""
+"Most documents have a reasonably limited set of elements including the "
+"following:"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:34
+msgid "Paragraphs"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:35
+msgid "Title"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:36
+msgid "Headings and subheadings and subsubheadings"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:37
+msgid "bullet lists"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:38
+msgid "numbered lists"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:39
+msgid "tables of data"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:40
+msgid "figures or images"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:41
+msgid "text that is bold, or italic"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:42
+msgid "page headers"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:43
+msgid "page footers"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:45
+msgid ""
+"As we learn HTML its important to keep in mind that the job of html is to"
+" structure the document and provide content.  We'll worry about making "
+"things look pretty until we get to CSS."
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:47
+msgid ""
+"HTML uses a set of tags to annotate(mark up) the document.  The tags all "
+"look like this:  ``< tagname >`` and they are balanced so that at the end"
+" of the content for that tag there is ``</ tagname >``.  Notice that the "
+"closing tag contains a  slash at the beginning to differentiate itself "
+"from an opening tag."
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:49
+msgid ""
+"An HTML document then just contains a series of these balanced tags.  "
+"Lets look at a small document that looks like this:"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:52
+msgid "My First Heading"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:54
+msgid "A simple paragraph of text."
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:56
+msgid "Another paragraph of text."
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:59
+msgid "The HTML for this document is as follows:"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:76
+msgid ""
+"&lt;html&gt;\n"
+"    &lt;head&gt;\n"
+"        &lt;title&gt;Test Page&lt;/title&gt;\n"
+"    &lt;/head&gt;\n"
+"    &lt;body&gt;\n"
+"        &lt;h1&gt;My First Heading&lt;/h1&gt;\n"
+"        &lt;p&gt;A simple paragraph of text&lt;/p&gt;\n"
+"        &lt;p&gt;Another paragraph of text&lt;/p&gt;\n"
+"    &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:77
+msgid ""
+"If you click the run button you will see the HTML in the example above in"
+" a special output window that mimics your browser.  Try changing the text"
+" of one of the paragraphs and click run again.   Try changing the ``h1`` "
+"tag to ``h2``  Don't forget to change both the opening and closing tags."
+"   I have indented the HTML for you so you can see the opening and "
+"closing tags more clearly.  A web browser does not care about indentation"
+" one bit, you can get rid of all of the indentation, or put everything on"
+" one line and the page will still look the same."
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:80
+msgid ""
+"Before we move on to talk more about specific HTML tags its useful to "
+"think about the page that is produced and the structure of the page.  You"
+" get a sense of the structure from the indentation I have provided, but "
+"its useful to look at this from another perspective.  Figure 2 "
+"illustrates a \"tree view\" of an HTML page."
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:84
+msgid ".. image:: HTML/Figures/tree.svg"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:84
+msgid "Figure 2.  A tree view of the html page"
+msgstr ""
+
+#: ../../_sources/HTML/intro.rst:86
+msgid ""
+"This tree is upside down with how we usually think of a tree, but in "
+"computer science we put the \"root\" of the tree at the top.  So the root"
+" of this tree is the html tag.  The html tag has two **children**, the "
+"head and the body.  The head has one child, which is the head tag.  The "
+"html tag is the **parent** of the head tag.  The body has three children,"
+" the h1 tag and two p tags.  You may also find it helpful to think of "
+"this as an outline, although you would have to rotate the picture 90 "
+"degrees counter clockwise to get the orientation into outline form.  We "
+"will see how this tree structure of an html page is useful later on when "
+"we start to use CSS and Javascript."
+msgstr ""
+

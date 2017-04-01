@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Javascript/exercises.rst:2
+msgid "Javascript Exercises"
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:5
+msgid "Make a simple web page that contains an h2 with the word \"Hello\"  a text input box, and a button.  When the user types a word or phrase into the input box and presses the button, replace the old h2 with the word entered.  Using animation, make the word spin."
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:18
+#: ../../_sources/Javascript/exercises.rst:30
+#: ../../_sources/Javascript/exercises.rst:42
+#: ../../_sources/Javascript/exercises.rst:55
+#: ../../_sources/Javascript/exercises.rst:72
+#: ../../_sources/Javascript/exercises.rst:87
+msgid ""
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:18
+msgid "&lt;html&gt;\n"
+"&lt;style&gt;\n"
+"&lt;/style&gt;\n"
+"&lt;body&gt;\n"
+"&lt;h2&gt;Hello&lt;/h2&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:19
+msgid "Make a simple web page that contains a button and a paragraph with the id of ``count`` Whenever this button is pressed increment the count by 1 and update the paragraph text.  Also update the font size so that as the number gets larger, so does the font."
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:30
+#: ../../_sources/Javascript/exercises.rst:42
+#: ../../_sources/Javascript/exercises.rst:72
+msgid "&lt;html&gt;\n"
+"\n"
+"\n"
+"\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:31
+msgid "Repeat the previous exercise but make a list of numbers.  In this case you will not be able to simply update the innerHTML of the paragraph, you will need to use the ``document.createElement()`` and ``document.appendChild()`` functions to add a new list item."
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:43
+msgid "Given the following html.  Every time the button is pressed you should add a row to the table, where the new row of the table contains the sum of the previous two rows.  You should make use  of the lastChild, previousSibling, and innerText attributes in this exercise."
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:55
+msgid "&lt;html&gt;\n"
+"    &lt;body&gt;\n"
+"       &lt;button onclick=\"addrow()\"&gt;Next&lt;/button&gt;\n"
+"       &lt;ul id=\"mytable\"&gt;&lt;li id=0&gt;1&lt;/li&gt;&lt;li id=1&gt;1&lt;/li&gt;&lt;/ul&gt;\n"
+"    &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:56
+msgid "Create an html page with two text input boxes and four buttons.  The buttons should be labeled ``+``, ``-``, ``*``, and ``/``.  When one of these buttons is pressed you should get the `value` from both text input boxes and add, subtract, multiply, or divide the numbers entered in the text input boxes.  The result should be displayed below the buttons.  **Note** In order to do math on the values you read from the text input boxes you will need to use ``Number.parseInt`` on the value.  for example suppose you get a reference to input box 1 using ``myIn1 = document.querySelector(\"#in1id\");`` then the statement ``value1 = Number.parseInt(myIn1.value)`` converts the string from the text input box to an integer.  In fact most of the time Javascript will do the conversion for you automatically except for addition."
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:73
+msgid "Starting with the code given, create a page that looks like the following image:  The rest of the page must be created using javascript.  You must use ``document.createElement`` and the ``appendChild`` functions."
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:0
+msgid ".. image:: Javascript/Figures/cePage.png"
+msgstr ""
+
+#: ../../_sources/Javascript/exercises.rst:87
+msgid "&lt;html&gt;\n"
+"&lt;body&gt;\n"
+"&lt;button onclick=\"makePage();\"&gt;Click Here&lt;/button&gt;\n"
+"&lt;/body&gt;\n"
+"\n"
+"&lt;/html&gt;"
+msgstr ""
+

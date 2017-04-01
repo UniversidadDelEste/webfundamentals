@@ -1,0 +1,287 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/CSS/morematching.rst:2
+msgid "More on Matching"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:4
+msgid ""
+"Now that we know how to change some style elements on tags we can move on"
+" and learn more about selectors and how to use selectors in conjunction "
+"with two new html attributes that give us a lot more flexibility in "
+"styling an html document."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:8
+msgid "Matching multiple tags"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:10
+msgid ""
+"suppose we want to have h1, h2, and h3 headers in blue, but h4, h5, and "
+"h6 headers in green?  We do not have to write a separate rule for each "
+"header tag, we can write one rule that looks like this:"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:12
+msgid ""
+"h1,h2,h3 {\n"
+"    color: blue;\n"
+"}\n"
+"\n"
+"h4,h5,h6 {\n"
+"    color: green;\n"
+"}"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:23
+msgid ""
+"You can read the commas between the tags as \"or.\"  So the first of the "
+"above rules read as If the tag is h1 or h2 or h3 then change the color to"
+" blue."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:25
+msgid ""
+"In the example below, add a rule so that the h2 and the paragraph have "
+"the color red."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:47
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      h1 {\n"
+"         color: blue;\n"
+"         font-size: 28pt;\n"
+"      }\n"
+"      &lt;/style&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"      &lt;h1&gt;Hello World!!&lt;/h1&gt;\n"
+"      &lt;p&gt;The paragraph text should be unchanged&lt;/p&gt;\n"
+"      &lt;h2&gt;I am not blue!&lt;/h2&gt;\n"
+"      &lt;h1&gt;Hello Again&lt;/h1&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:49
+msgid "Using an id attribute in a rule"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:51
+msgid ""
+"Another common situation is that you have one particular paragraph that "
+"you want to have in a different color.  You cannot just use a selector "
+"that matches the p tag as that will match all of the p tags.  So in this "
+"case we need to somehow mark a particular paragraph so that we can have a"
+" selector that selects that paragraph and only that paragraph.  This is "
+"where the ``id`` attribute is used.    Any html tag can have an id "
+"attribute, which serves as a **unique identifier** for that tag.  In "
+"fact, the value of the id attribute must be unique throughout the file."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:54
+msgid ""
+"In the example below we have two rules.  One that changes the text to "
+"blue in all paragraphs.  The second rule changes the font-size to 18pt "
+"for the paragraph that has the identifier of \"abc456\"  The hashtag "
+"``#`` is very important to this rule as it tells the css matcher that "
+"what comes after that hashtag must match the id attribute of some "
+"element.  So, in fact the p is redundant in this example, and you could "
+"remove the p from the beginning of the selector and the rule would still "
+"work.  In fact, you should try that now."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:79
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      p {\n"
+"         color: blue;\n"
+"      }\n"
+"      p#abc456 {\n"
+"         font-size: 18pt;\n"
+"      }\n"
+"      &lt;/style&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"      &lt;h1&gt;Hello World!!&lt;/h1&gt;\n"
+"      &lt;p id=\"xyz123\"&gt;The paragraph text should be "
+"unchanged&lt;/p&gt;\n"
+"      &lt;h2&gt;I am not blue!&lt;/h2&gt;\n"
+"      &lt;h1&gt;Hello Again&lt;/h1&gt;\n"
+"      &lt;p id=\"abc456\"&gt;This is another paragraph with a different "
+"identifier.&lt;/p&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:80
+msgid ""
+"What do you think will happen if you change the second rule so that it "
+"sets the color to red?   If you said that it will keep the first "
+"paragraph's color blue but change the second to red, your are correct.  "
+"Why does the second rule over-rule the first?  Because the second rule is"
+" more specific.  You might have thought it was because of the order of "
+"the rules, but in fact you can change the order of the two rules and try "
+"it and you will see that you still get the same result."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:83
+msgid "Using the class attribute in a rule"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:85
+msgid ""
+"Sometimes you want to match some elements that are the same tag but not "
+"others.  One example of this is when you want to have a \"zebra striped\""
+" table, where every other line has a slightly different background color "
+"then you are going to want to use a ``class`` attribute.  Classes and CSS"
+" may be the single most useful combination for styling your web pages."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:87
+msgid ""
+"Unlike the ``id`` attribute, many different tags can have the same value "
+"for a class.  Some examples:"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:89
+msgid ""
+"You have paragraphs or headings and you want some normal, some are "
+"\"warnings\", some are \"errors\", and some are \"cautions\".   Or "
+"perhaps you have a list of things, some things one the list are hight "
+"priority, some are low, and some are medium.  By using a class you can "
+"apply a consistent style to all of the things that belong to that class "
+"(have the same value for their class attribute.)"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:91
+msgid ""
+"To select any element that matches a particular class you use the ``.`` "
+"before the name of the class.  So ``.high`` will match any tags that have"
+" the attribute ``class=high``."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:93
+msgid ""
+"Returning to our HTML table example we have some rows that are \"odd\" "
+"and some that are \"even\".  Lets make a short table and style the odd "
+"and even rows differently."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:120
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      .odd {\n"
+"         background-color: #9999ee;\n"
+"      }\n"
+"      .even {\n"
+"         background-color: pink;\n"
+"      }\n"
+"      &lt;/style&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"        &lt;table&gt;\n"
+"        &lt;tr "
+"class=\"odd\"&gt;&lt;td&gt;aapl&lt;/td&gt;&lt;td&gt;$101.23&lt;/td&gt;&lt;/tr&gt;"
+"\n"
+"        &lt;tr "
+"class=\"even\"&gt;&lt;td&gt;goog&lt;/td&gt;&lt;td&gt;$583.10&lt;/td&gt;&lt;/tr&gt;"
+"\n"
+"        &lt;tr "
+"class=\"odd\"&gt;&lt;td&gt;tsla&lt;/td&gt;&lt;td&gt;$281.10&lt;/td&gt;&lt;/tr&gt;"
+"\n"
+"        &lt;tr "
+"class=\"even\"&gt;&lt;td&gt;amzn&lt;/td&gt;&lt;td&gt;$331.33&lt;/td&gt;&lt;/tr&gt;"
+"\n"
+"        &lt;/table&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:121
+#, python-format
+msgid ""
+"Now for some additional practice lets make the table look really nice.  "
+"Add a header and have the background of the header be light gray.  Make "
+"the text of the header bold and slightly larger.  Overall change the "
+"table so its width is 50% of the page and get rid of the page. `This page"
+" <http://www.w3schools.com/css/css_table.asp>`_ gives you a complete "
+"rundown on how to style tables."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:125
+msgid "Matching Children"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:127
+msgid ""
+"When using the semantic html elements it is sometimes very desireable to "
+"match a particular tag, but only if that tag is in the article section.  "
+"CSS allows us to match tags that are descendants of other tags by using a"
+" space after the parent tag.  For example:"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:129
+msgid ""
+"article h1 {\n"
+"    color:  purple;\n"
+"}"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:136
+msgid ""
+"Will change the color of the h1 but only if they are descendants of the "
+"article tag."
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:161
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      article h1 {\n"
+"          color: purple;\n"
+"      }\n"
+"      &lt;/style&gt;\n"
+"   &lt;/head&gt;\n"
+"   &lt;body&gt;\n"
+"   &lt;h1&gt;This is outside the article&lt;/h1&gt;\n"
+"   &lt;article&gt;\n"
+"       &lt;h1&gt;This is inside the article&lt;/h1&gt;\n"
+"       &lt;section&gt;\n"
+"           &lt;h1&gt;This is in a section of an article&lt;/h1&gt;\n"
+"       &lt;/section&gt;\n"
+"   &lt;/article&gt;\n"
+"   &lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/morematching.rst:162
+msgid ""
+"In the example above, both of the h1's inside the article were changed "
+"because they are both descendants of the article.  If we only wanted to "
+"change the h1 that is a direct child of the article we can replace the "
+"space with a ``>`` giving us ``article>h1`` which indicates that only the"
+" immediate child should have its style changed."
+msgstr ""
+

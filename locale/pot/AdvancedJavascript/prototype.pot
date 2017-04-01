@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:2
+msgid "Javascript Prototypes"
+msgstr ""
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:6
+msgid "Object Creation"
+msgstr ""
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:19
+#: ../../_sources/AdvancedJavascript/prototype.rst:108
+msgid ""
+msgstr ""
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:19
+msgid "x  = Object.create(null)\n"
+"x.foo = 1\n"
+"x.bar = 2\n"
+"alert(x['bar'])"
+msgstr ""
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:20
+msgid "To try:"
+msgstr ""
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:23
+msgid "x = Object.create(null)\n"
+"x.bar = 1\n"
+"x.foo = function() {\n"
+"    console.log(this.bar)\n"
+"}\n"
+"x.foo()\n"
+"\n"
+"\n"
+"y = Object.create(x)\n"
+"y.foo()\n"
+"y.bar=2\n"
+"y.foo()\n"
+"\n"
+"\n"
+"z = function() {\n"
+"    this.bar = 2\n"
+"    this.foo = function() {\n"
+"        console.log(this.bar)\n"
+"    }\n"
+"    return this\n"
+"}\n"
+"\n"
+"z1 = z()\n"
+"z1.foo()\n"
+"\n"
+"myClass = function() {\n"
+"    this.bar = 22\n"
+"    this.foo = function() {\n"
+"        console.log(this.bar)\n"
+"    }\n"
+"}\n"
+"\n"
+"z2 = new myClass()\n"
+"z2.foo()\n"
+"console.log(z2.prototype)\n"
+"\n"
+"\n"
+"MyClass = function(x,y,z) {\n"
+"     var priv = x\n"
+"     this.pub = y\n"
+"     //if (z == undefined) {\n"
+"     //      z = 'default value'\n"
+"     //}\n"
+"     this.something = z\n"
+"\n"
+"     var innerFunc = function() {\n"
+"             priv = priv + 1\n"
+"     }\n"
+"\n"
+"     this.publicFunction =function(z) {\n"
+"             priv = priv + z\n"
+"             return priv\n"
+"     }\n"
+"\n"
+"}\n"
+"\n"
+"MyClass.prototype.outerfunction = function(a) {\n"
+"     this.pub = this.pub + a\n"
+"     //priv = priv + 1\n"
+"     return this.pub\n"
+"}\n"
+"\n"
+"foo = new MyClass(10,20,30)\n"
+"console.log(foo.outerfunction(99))\n"
+"console.log(foo.publicFunction(99))\n"
+"//foo.innerFunc()"
+msgstr ""
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:96
+msgid "Exercise"
+msgstr ""
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:98
+msgid "Create a Person class, they should have private ivars for ssn and weight.  public ivars for age and name. public methods for gainWeight, getSSN, and getWeight. add a prototype method for birthday that adds one to the age, and also returns the new age."
+msgstr ""
+
+#: ../../_sources/AdvancedJavascript/prototype.rst:108
+msgid "// your code here"
+msgstr ""
+

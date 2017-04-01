@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/Frameworks/database.rst:2
+msgid "Persistent Data and Datbases"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:4
+msgid "In the three legged stool of web applications, we have covered both the view and the controller.  We have even built simple apps with very simple models.  But now it is time to look at a real model, and how a database management system is used in a web application.   We will divide this chapter into three modules:"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:6
+msgid "Data Modeling and Creating a Database"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:7
+msgid "Querying the database using Python's DBAPI"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:8
+msgid "Using an Object Relational Mapping layer such as SQLAlchemy"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:11
+msgid "Data Modeling"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:13
+msgid "Let me begin with the statement that data modeling could be the most important skill you learn in your computer science career.  If you understand your (or your customer's) data, and can effectively communicate to your customer about their data you have already won half the battle.  Data modeling is an excellent communications tool, both to help you uncover hidden requirements and assumptions, and to facilitate good understanding between you and those you are working with."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:15
+msgid "A data model will help us uncover and describe the entities that are important to our application.  These entities will become the tables in our database.  The things we need to remember about the entities or the attributes of our entities will become the columns in our table."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:17
+msgid "Lets use an example of keeping track of college courses to illustrate what we mean.  To start out very simply we think of the nouns or things that are important to registering for courses at college."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:19
+msgid "student"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:20
+msgid "course"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:21
+msgid "grade"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:22
+msgid "professor"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:23
+msgid "department"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:24
+msgid "major"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:25
+msgid "requirement"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:26
+msgid "pre-requisite"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:27
+msgid "classroom"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:28
+msgid "time"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:30
+msgid "When doing a data model we often create a diagram to represent the data model called a logical data structure (LDS)  An LDS is a simple notation that aids in the modeling and design task without being so complicated as to get in the way."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:32
+msgid "Looking at our list, the first thing we may want to investigate is the course.  What is it about a course that uniquely identifies it?  What other things do we want to remember about a course.  At most colleges courses have unique identifiers that consist of the department and a number such as CS101 or BIO423.  For a course we may also want to remember the title of the course, the course description, how many credits the course is worth."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:34
+msgid "Other attributes of the course may be the professor who teaches it, the room the course meets in, and the time.  However these are slightly problematic in that these things change from time to time.  Now if we don't care about that and only want to remember the most current room or professor its not a problem, but if we want to be able to look back and find out who taught a course where and when we'll have to defer these attributes for a while."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:36
+msgid "Lets begin our LDS diagram by drawing out the Course entity along with its attributes."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:40
+msgid ".. image:: Frameworks/Figures/lds1.svg"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:40
+msgid "An LDS with one entity"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:42
+msgid "To continue thinkgin about the course another idea that may have occured to you is that we want to remember the students that took the course.  So, student is an attribute of course.  However, when you think about student you can probably think of many things ou wold want to remember about a student, so its no ordinary attribute.  In fact it is another entity."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:44
+msgid "A student is uniquely identified by their student id, and there are lots of things to remember:  first Name, last name, the year they enrolled, their major, their email address, and potentially much more.  However, how do we indicate that there is a relationship between a student and a course?  What kind of relationship?  There are three different relationships to consider:"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:46
+msgid "one to one"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:47
+msgid "one to many"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:48
+msgid "many to many"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:50
+msgid "To figure out the kind of relationship we have we need to ask the following questions:  Does a course have only one student.  Most of the time no.  Does a course have many students?  Yes.  So we know that this relationship is at least a one to many relationship.  But now we need to ask the question from the other perspective. Does a student take just one course?  Probably not.  Does a student take many courses.  Yes.  So we have a many to many relationship.  This looks like the following figure:"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:55
+msgid ".. image:: Frameworks/Figures/lds2.svg"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:55
+msgid "An LDS with a many to many relationship"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:57
+msgid "In the case of a many to many relationship we are *almost never* done at this point.  Inevitably, there is more that we want to remember about this relationship, or there is a name we want to assign to the relationship.  In this case the many to many relationship represents a student enrolling in a course.  So an enrollment is a new and important entity.  The enrollment represents a student taking a course.  Now there are things we want to remember about this occurrance.  When did the student take the course?  What grade did they receive?  What room was the course taught in?  Who taught the course?  With this in mind, we evolve or LDS to look like the following:"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:61
+msgid ".. image:: Frameworks/Figures/lds3.svg"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:61
+msgid "An LDS with an evolved many to many relationship"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:63
+msgid "OK, we've barely scratched the surface of data modeling, and yet this example is illustrative of a huge fraction of the kinds of relationships that you will see in the real world.  If you don't know any more than this, you can already model a lot of applications."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:66
+msgid "The Physical Database"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:68
+msgid "Having looked at the logical structure of our course application let us know think about its physical representation, that is how it is represented in the computer or on the disk of the computer.  For purposes of this chapter we will consider the physical representation in a relational database such as Postgresql, Mysql, or Sqlite3."
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:70
+msgid "Each of the entities in our logical data structure becomes a **table** in the relational database.  That is each instance of an entity is a row in the table and each of the attributes are a column.  For example some instances of our course entity would look like this:"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:73
+#: ../../_sources/Frameworks/database.rst:84
+msgid "Course_id"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:73
+msgid "title"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:73
+#: ../../_sources/Frameworks/database.rst:76
+msgid "description"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:73
+msgid "credits"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:75
+#: ../../_sources/Frameworks/database.rst:86
+msgid "CS150"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:75
+msgid "Intro to Computer Science"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:75
+msgid "A great class"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:75
+#: ../../_sources/Frameworks/database.rst:77
+#: ../../_sources/Frameworks/database.rst:78
+msgid "4"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:76
+#: ../../_sources/Frameworks/database.rst:88
+msgid "CS130"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:76
+msgid "Web Programming"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:76
+msgid "2"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:77
+msgid "BIO101"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:77
+msgid "Something about Biology"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:77
+msgid "it bleeds"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:78
+#: ../../_sources/Frameworks/database.rst:87
+#: ../../_sources/Frameworks/database.rst:89
+msgid "CHEM1"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:78
+msgid "Chemistry"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:78
+msgid "it smells"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:81
+msgid "You should be able to draw a similar table for a student.  But what about the enrollment table?  The enrollment table is a bit different because it is the target of two one to many relationships.  In a one to many relationship the identifier from the \"one\" side of the relationship must be added to the table on the many side.  If we have student 1234 who has taken CS150, and CHEM1, and student 4567 who has taken CS130 and CHEM1 our enrollment table would look like this:"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:84
+msgid "Student_id"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:84
+msgid "Grade"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:84
+msgid "Professor"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:84
+msgid "Classroom"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:84
+msgid "Semester"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:86
+#: ../../_sources/Frameworks/database.rst:87
+msgid "1234"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:86
+msgid "B+"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:86
+#: ../../_sources/Frameworks/database.rst:88
+msgid "Miller"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:86
+msgid "Olin 202"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:86
+#: ../../_sources/Frameworks/database.rst:88
+msgid "Fall14"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:87
+#: ../../_sources/Frameworks/database.rst:89
+msgid "B"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:87
+#: ../../_sources/Frameworks/database.rst:89
+msgid "Rinco"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:87
+#: ../../_sources/Frameworks/database.rst:89
+msgid "Valders 117"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:87
+msgid "Spr14"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:88
+#: ../../_sources/Frameworks/database.rst:89
+msgid "4567"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:88
+msgid "A"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:88
+msgid "Olin 112"
+msgstr ""
+
+#: ../../_sources/Frameworks/database.rst:89
+msgid "Spr13"
+msgstr ""
+

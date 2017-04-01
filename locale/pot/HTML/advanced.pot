@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 Brad Miller
+# This file is distributed under the same license as the Fundamentals of Web Programming package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_sources/HTML/advanced.rst:2
+msgid "Advanced HTML Tags"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:6
+msgid "Unordered Lists"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:16
+#: ../../_sources/HTML/advanced.rst:28
+#: ../../_sources/HTML/advanced.rst:50
+#: ../../_sources/HTML/advanced.rst:70
+#: ../../_sources/HTML/advanced.rst:120
+msgid ""
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:16
+msgid "&lt;ul&gt;\n"
+"&lt;li&gt;This is an unordered list&lt;/li&gt;\n"
+"&lt;li&gt;The &lt;code&gt;li&lt;/code&gt; tags come between two &lt;code&gt;ul&lt;/code&gt; tags\n"
+"&lt;/ul&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:18
+msgid "Ordered Lists"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:28
+msgid "&lt;ol&gt;\n"
+"&lt;li&gt;This is an ordered list&lt;/li&gt;\n"
+"&lt;li&gt;The &lt;code&gt;li&lt;/code&gt; tags come between two &lt;code&gt;ol&lt;/code&gt; tags\n"
+"&lt;li&gt;Notice that the &lt;code&gt;li&lt;/code&gt; tags are used for both.\n"
+"&lt;/ol&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:29
+msgid "The ``ol`` tag can also have a type attribute.  The type attribute can be one of the following values"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:31
+msgid "1 This will cause the list to be numbered with numbers"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:32
+msgid "A This will cause the list to be ordered with upper case letters"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:33
+msgid "a This will cause the list to be ordered with lower case letters"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:34
+msgid "I This will cause the list to be ordered with upper case roman numerals"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:35
+msgid "i This will cause the list to be ordered with lower case roman numerals"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:37
+msgid "Try it yourself."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:40
+msgid "Description Lists"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:50
+msgid "&lt;dl&gt;\n"
+"&lt;dt&gt;Description list&lt;/dt&gt;&lt;dd&gt;A list for defining terms&lt;/dd&gt;\n"
+"&lt;dt&gt;dt&lt;/dt&gt;&lt;dd&gt;The &lt;code&gt;dt&lt;/code&gt; tags are for the term&lt;/dd&gt;\n"
+"&lt;dt&gt;dd&lt;/dt&gt;&lt;dd&gt;The &lt;code&gt;dd&lt;/code&gt; tags are for the description&lt;/dd&gt;\n"
+"&lt;/dl&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:52
+msgid "Nesting Lists"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:54
+msgid "Lists can be inside of other lists. Too.  This is very much true of most HTML tags."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:70
+msgid "&lt;ol&gt;\n"
+"&lt;li&gt;This is an ordered list&lt;/li&gt;\n"
+"&lt;li&gt;The &lt;code&gt;li&lt;/code&gt; tags come between two &lt;code&gt;ol&lt;/code&gt; tags\n"
+"&lt;li&gt;Notice that the &lt;code&gt;li&lt;/code&gt; tags are used for both.\n"
+"&lt;ul&gt;\n"
+"&lt;li&gt;This is an unordered list&lt;/li&gt;\n"
+"&lt;li&gt;The &lt;code&gt;li&lt;/code&gt; tags come between two &lt;code&gt;ul&lt;/code&gt; tags&lt;/li&gt;\n"
+"&lt;/ul&gt;\n"
+"&lt;li&gt;You can mix and match lists like this as deeply as you want.&lt;/li&gt;\n"
+"&lt;/ol&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:72
+msgid "Tables"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:74
+msgid "Tables have many uses, you can use them for organizing data as you normally would in a report where you have rows and columns of numbers or other information, but you can also use tables invisibly to influence how your page is displayed.  In the early days of html it was common to use a table to create a two column page layout.  We can still do that but now it is **much more acceptable** to use CSS for that purpose."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:76
+msgid "Here is a complete example that illustrates the use of the following table specific tags"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:78
+msgid "table  -- This is the main tag for a table"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:79
+msgid "tr  -- every row in a table starts with a tr tag"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:80
+msgid "td -- every column in a row is delineated by a ``td`` tag"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:81
+msgid "th -- You can use the ``th`` tag in place of the ``td`` tag in the first row to make headings"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:120
+msgid " &lt;table width='100%' border=1px cellspacing=0&gt;\n"
+" &lt;caption&gt;Table of Scores&lt;/caption&gt;\n"
+" &lt;tr&gt;\n"
+"     &lt;th&gt;Number&lt;/th&gt;\n"
+"     &lt;th&gt;First Name&lt;/th&gt;\n"
+"     &lt;th&gt;Last Name&lt;/th&gt;\n"
+"     &lt;th&gt;Points&lt;/th&gt;\n"
+" &lt;/tr&gt;\n"
+" &lt;tr&gt;\n"
+"     &lt;td&gt;1&lt;/td&gt;\n"
+"     &lt;td&gt;Russell&lt;/td&gt;\n"
+"     &lt;td&gt;Jackson&lt;/td&gt;\n"
+"     &lt;td&gt;94&lt;/td&gt;\n"
+" &lt;/tr&gt;\n"
+" &lt;tr&gt;\n"
+"     &lt;td&gt;2&lt;/td&gt;\n"
+"     &lt;td&gt;John&lt;/td&gt;\n"
+"     &lt;td&gt;Deere&lt;/td&gt;\n"
+"     &lt;td&gt;80&lt;/td&gt;\n"
+" &lt;/tr&gt;\n"
+" &lt;tr&gt;\n"
+"     &lt;td&gt;3&lt;/td&gt;\n"
+"     &lt;td&gt;Nikola&lt;/td&gt;\n"
+"     &lt;td&gt;Tesla&lt;/td&gt;\n"
+"     &lt;td&gt;100&lt;/td&gt;\n"
+" &lt;/tr&gt;\n"
+" &lt;tr&gt;\n"
+"     &lt;td&gt;4&lt;/td&gt;\n"
+"     &lt;td&gt;Richard&lt;/td&gt;\n"
+"     &lt;td&gt;Smith&lt;/td&gt;\n"
+"     &lt;td&gt;50&lt;/td&gt;\n"
+" &lt;/tr&gt;\n"
+" &lt;/table&gt;"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:121
+msgid "There are many attributes you can use with the various table tags."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:123
+msgid "``table`` * width - you can specify a width as a percentage or as a number of pixels.  This attribute is useful for right now, but its use is not encouraged, as you are better off to use CSS to control the look of your table.  We say that this attribute is **deprecated** * border - you can add borders to your tables as in the example above, but this tag is deprecated as well. * The spacing between the cells of the table.  Also deprecated."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:128
+msgid "``td`` * colspan  -- if you have a particular table where you need an extra wide column in some rows you can make a cell of your table span more than one column using the colspan attribute.  Its value is the number of columns."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:131
+msgid "``tr`` * rowspan -- If you have a particular table where you need an column to span multiple rows you can make a cell of your table span more than one row using the rowspan attribute.  Its value is the number of rows."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:135
+msgid "Experiment with a table.  What kinds of tags can you include inside each ``td``?  Can you make a table inside another table?"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:143
+msgid "Audio"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:145
+msgid "Embedding audio in your webpage allows you to link to various files containing music or speech.  The audio tag looks like the following:"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:147
+msgid "<audio controls>\n"
+"    <source src=\"horse.ogg\" type=\"audio/ogg\">\n"
+"    <source src=\"horse.mp3\" type=\"audio/mpeg\">\n"
+"    Your browser does not support the audio element.\n"
+"</audio>"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:155
+msgid "The ``controls`` attribute provides start/stop/fast-forward/rewind buttons for the listener.  The ``source`` tags inside the ``audio`` tag allow you to provide several different audio formats.  This is because different browsers support different kinds of audio The browser will go through the list, in order, until it finds a format it understands, or else, it will replace the controller with the message at the end."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:158
+msgid "Video"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:160
+msgid "Embedding video in your webpage allows you to link to various files containing movies."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:162
+msgid "<video height=312 width= 540 controls>\n"
+"    <source src=\"movie.mp4\" type=\"video/mp4\">\n"
+"    <source src=\"movie.ogg\" type=\"video/ogg\">\n"
+"    Your browser does not support the video element.\n"
+"</video>"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:170
+msgid "The ``controls`` attribute provides start/stop/fast-forward/rewind buttons for the listener.  The ``source`` tags inside the ``video`` tag allow you to provide several different video formats.  This is because different browsers support different kinds of video The browser will go through the list, in order, until it finds a format it understands, or else, it will replace the controller with the message at the end."
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:175
+msgid "IFrames"
+msgstr ""
+
+#: ../../_sources/HTML/advanced.rst:177
+msgid "IFrames allow you to embed a webpage within another webpage.  The activecode examples in this book use an iframe to allow you to experiment with the html, by creating a page within a page."
+msgstr ""
+

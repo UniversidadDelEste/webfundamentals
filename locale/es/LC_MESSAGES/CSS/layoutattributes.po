@@ -1,0 +1,834 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Fundamentals of Web Programming \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-01 15:42-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../_sources/CSS/layoutattributes.rst:2
+msgid "Changing your page layout"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:4
+msgid ""
+"Before we go any further it is important to stop and think a bit about "
+"how the browser renders the html into the browser window.  As the browser"
+" reads each html tag, it must figure out where on the page it belongs.  "
+"For the most part, the browser flows each tag from top to bottom and from"
+" left to right.  As we have mentioned block elements start on a new line,"
+" and inline elements flow from left to right, fitting within the "
+"horizontal size of the page or else going on to the next line.  In this "
+"section we will consider several different CSS options that have an "
+"impact on the layout of a page."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:7
+msgid "The CSS Box Model"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:9
+msgid ""
+"All HTML elements can be thought of simply as boxes.  In fact that is "
+"exactly how the browser thinks of them as it begins the process of "
+"rendering the page.  When doing web page design and layout it is very "
+"common to hear designers talk about the CSS box model.  Figure 1 "
+"illustrates the different components that go into the box model."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:13
+msgid ".. image:: CSS/Figures/box-model.gif"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:13
+msgid "Figure used in accordance with w3schools fair use policy"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:15
+msgid "The different parts of the box model are defined as follows:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:17
+msgid "Content:  The actual text or image content of an html tag"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:18
+msgid "Padding:  The space between the content and the border."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:19
+msgid "Border:  This can be an actual drawn border or it can be invisible"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:20
+msgid ""
+"Margin: The space outside the border between this box and the boxes next "
+"to it in each direction."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:22
+msgid "Lets try a simple example:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:46
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      section {\n"
+"           width: 250px;\n"
+"           background-color: green;\n"
+"           padding: 25px;\n"
+"           border: 10px solid blue;\n"
+"           margin: 25px;\n"
+"           }\n"
+"      &lt;/style&gt;\n"
+"    &lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"\n"
+"   &lt;section&gt;Hello World&lt;/section&gt;\n"
+"   &lt;section id=b&gt;Hello World&lt;/section&gt;\n"
+"\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:47
+msgid ""
+"As a bit of review, add a rule to the example above to make the margin "
+"for the second Hello world to be 5px.  What does this tell you about how "
+"margins work?"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:49
+msgid ""
+"The size of content area itself can also be controlled using the "
+"following properties:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:51
+msgid "height"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:52
+msgid "max-height"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:53
+msgid "min-height"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:54
+msgid "width"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:55
+msgid "max-width"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:56
+msgid "min-width"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:58
+msgid ""
+"Each of these properties can be specified in terms of pixels (px), points"
+" (pt), or as a percentage.  In addition the auto keyword can be used, "
+"which is the default and allows the browser to figure out the proper "
+"height and width."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:61
+msgid ""
+"When you use height and width with a **container** element, such as one "
+"of the semantic elements, it is very useful to know about the overflow "
+"property.  What if you set your height so small that the content does not"
+" fit?  The `overflow "
+"<http://www.w3schools.com/cssref/pr_pos_overflow.asp>`_ property tells "
+"you how to handle that."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:63
+msgid "Here is an example activecode for you to experiment with:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:95
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      section {\n"
+"           width: 250px;\n"
+"           background-color: green;\n"
+"           padding: 25px;\n"
+"           border: 10px solid blue;\n"
+"           margin: 25px;\n"
+"           height: 100px;\n"
+"           }\n"
+"      &lt;/style&gt;\n"
+"    &lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"\n"
+"   &lt;section&gt;\n"
+"   &lt;p&gt;Ea dolore do irure aliquip id qui dolor do in aliquip irure "
+"anim id. Adipisicing qui\n"
+"    incididunt consectetur veniam cupidatat dolor. Aliquip irure labore "
+"elit ipsum officia non\n"
+"    culpa consequat et voluptate. Officia nisi nostrud exercitation quis "
+"amet ipsum incididunt.\n"
+"    Et incididunt eu laborum velit dolore laborum. Esse id mollit fugiat "
+"nostrud non ex occaecat\n"
+"    culpa. Adipisicing quis excepteur voluptate commodo minim aliqua "
+"excepteur occaecat\n"
+"    eu ipsum nisi duis amet. Duis proident fugiat velit elit esse cillum "
+"minim laborum elit.\n"
+"   &lt;/p&gt;\n"
+"\n"
+"   &lt;/section&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:96
+msgid "The possible values for the overflow property are:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:98
+msgid "visible"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:99
+msgid "hidden"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:100
+msgid "scroll"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:101
+msgid "auto"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:103
+msgid "Give them a try in the example above and see what happens."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:105
+msgid "Greeking"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:107
+msgid ""
+"You may be wondering about the use of latin words in the example "
+"paragraph.  This is an old tradition in typesetting, to use a bunch of "
+"latin words, many of the sentences start with \"Lorum Ipsum,\" so "
+"sometimes it is called Lorum Ipusum as well.  The idea is to fill the "
+"space with words that obviously have no relationship to the actual "
+"webpage.  This helps reviewers focus on the style rather than the "
+"content.  Why do they call it greeking when the words are latin?  Its "
+"Greek to me.  Obviously they skipped Paideia that day."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:111
+msgid "Display"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:113
+msgid ""
+"With CSS you can take control of how each element is layed out on the "
+"page.  You can hide elements, you can make block elements inline, and "
+"inline elements block.  There are two ways to control the visibility of "
+"an element.  You can completely hide it, as if it is not there and takes "
+"up no space on the page, or you can have the leave the space on the page,"
+" but it will not have anything in it."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:136
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"         h1.gone {\n"
+"             background-color: #bbbbbb;\n"
+"             display: none;\n"
+"         }\n"
+"      &lt;/style&gt;\n"
+"    &lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"\n"
+"   &lt;h1&gt;Hello World One&lt;/h1&gt;\n"
+"   &lt;h1 class=\"gone\"&gt;Hello World Two&lt;/h1&gt;\n"
+"   &lt;h1&gt;Hello World Three&lt;/h1&gt;\n"
+"   &lt;h1 class=\"gone\"&gt;Hello World Four&lt;/h1&gt;\n"
+"   &lt;h1&gt;Hello World Five&lt;/h1&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:137
+msgid ""
+"Now change the rule and instead of ``display: none`` change it to "
+"``visibility: hidden``  Notice that visibility hidden reserves space on "
+"the page for the element but does not show it.  Whereas the ``display: "
+"none`` rule removed any trace of the element.  Now change the rule to "
+"``visibility: show`` to display all of the elements."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:139
+msgid ""
+"The display property can also be used to change block elements into "
+"inline elements.  Consider the following example."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:160
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      &lt;/style&gt;\n"
+"    &lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"   &lt;p&gt;There are 10 kinds of people in the world.\n"
+"   &lt;ol&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;/ol&gt;\n"
+"   &lt;p&gt;When you have stopped laughing, add a CSS rule that changes "
+"the display\n"
+"   property for the ``li`` element and sets its value to ``inline``. "
+"&lt;/p&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:161
+msgid ""
+"This technique is often used in the navigation bar to create a \"menu\" "
+"of links.  See exercise 5 in the exercises section for some practice with"
+" this."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:164
+msgid "Floating"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:166
+msgid ""
+"The CSS float property allows us to push HTML elements to the left or "
+"right, so that other elements will wrap around them.  This can be "
+"extremely useful for images, but will also be very useful when we begin "
+"to work on more complex layouts for our pages.  Lets begin with a simple "
+"example."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:181
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      &lt;/style&gt;\n"
+"    &lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"&lt;p&gt;the quick brown fox jumped over the lazy dog.  the quick brown "
+"fox jumped over the lazy dog.  the quick brown fox jumped over the lazy "
+"dog.  &lt;img "
+"src=\"http://interactivepython.org/runestone/static/webfundamentals/_images"
+"/norse-logo.png\" /&gt; the quick brown fox jumped over the lazy dog. the"
+" quick brown fox jumped over the lazy dog. the quick brown fox jumped "
+"over the lazy dog.\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:182
+msgid ""
+"Notice that the logo appears right in the middle of the text in its "
+"normal inline flow.   Now, add a CSS rule for an img tag that sets the "
+"float property to left.   Then change the rule to float the image to the "
+"right."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:184
+msgid ""
+"Next lets add a second copy of the norse logo to the page by copying and "
+"pasting the image again."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:186
+msgid ""
+"Next, modify the html, and add a CSS rule so that one logo is floated to "
+"the left and the other is floated to the right."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:188
+msgid ""
+"The float property can also be applied to block elements.  This will "
+"cause the block elements to behave more like inline elements."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:190
+msgid "The clear property is used to undo the effects of the float."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:195
+msgid "Positioning"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:197
+msgid ""
+"There are several different ways to affect the positioning of html "
+"elements either inside or outside of the normal flow of the layout."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:199
+msgid "static"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:200
+msgid "fixed"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:201
+msgid "relative"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:202
+msgid "absolute"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:204
+msgid ""
+"**Static** is the default positioning value for the css position "
+"property.  The static value simply tells the browser to position this "
+"element in the \"normal flow\" of the document."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:206
+msgid ""
+"**Fixed** positioning is measured against the frame of the browser "
+"window.  Elements with a fixed position value do not move even when the "
+"contents of the browser window are scrolled.  The navigation bar at the "
+"top of this page uses the fixed position value so it is always visible.  "
+"Because fixed elements are outside the flow of the document they can "
+"sometimes cause unexpected results that you have to deal with carefully."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:208
+msgid ""
+"A **relatively** positioned element is measured relative to its normal "
+"position in the flow.  Using a relative position value lets you create "
+"elements that overlap each other."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:210
+msgid ""
+"An **absolute** element is positioned relative to the first parent "
+"element that has a position other than static. If no such element is "
+"found, the containing block is the ``html`` tag for the entire document."
+"  Absolutely positioned elements are positioned outside the normal flow "
+"of the document."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:213
+msgid "Fixed"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:215
+msgid ""
+"Lets look at an example of how to use fixed positioning to create an "
+"element that stays put on the screen."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:262
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      #sticky {\n"
+"         position: fixed;\n"
+"         top: 0px;\n"
+"         left: 5px\n"
+"      }\n"
+"      &lt;/style&gt;\n"
+"    &lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"   &lt;nav id=\"sticky\"&gt;\n"
+"       &lt;p&gt;There are 10 kinds of people in the world.&lt;/p&gt;\n"
+"   &lt;/nav&gt;\n"
+"   &lt;ol&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;li&gt;Those that know how to count in binary.&lt;/li&gt;\n"
+"   &lt;li&gt;Those that do not know how to count in binary&lt;/li&gt;\n"
+"   &lt;/ol&gt;\n"
+"   &lt;p&gt;When you have stopped laughing, add a CSS rule that changes "
+"the display\n"
+"   property for the ``li`` element and sets its value to ``inline``. "
+"&lt;/p&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:263
+msgid ""
+"When you run the example above you will notice that its not quite right!"
+"  The text is overlapping and the page generally looks ugly.    The "
+"elements overlap because the fixed positioning takes the paragraph block "
+"element out of the flow.  Because its out of the flow the browser renders"
+" the ``ol`` as if it should be the first thing at the top of the page."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:266
+msgid ""
+"Your challenge is to fix the example so that the sentence stays nicely "
+"anchored to the top, but the ordered list begins below it."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:271
+#: ../../_sources/CSS/layoutattributes.rst:327
+msgid "data-showtitle=\"Show\""
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:270
+msgid ""
+"Here is one way to solve this problem.  Add a rule for the ``ol`` that "
+"specifies a top-margin.  Make the top margin large enough so that the "
+"list starts below the first paragraph.  You may need to experiment a "
+"little bit with some different values before you find one that works "
+"well.  Now you should also add some styling to the nav to give it a "
+"background color and make it fill the entire width of the window."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:273
+msgid "Relative"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:275
+msgid ""
+"Next lets look at the relative position and how we can use it to make "
+"overlapping elements."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:279
+msgid "Lets make a stack of cards using the following image:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:282
+msgid ".. image:: CSS/Figures/ace-of-hearts.gif"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:300
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"      img.card {\n"
+"          height: 200px;\n"
+"      }\n"
+"      &lt;/style&gt;\n"
+"   &lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"   &lt;img id=\"a\" class=\"card\" "
+"src=\"http://interactivepython.org/runestone/static/webfundamentals/_images"
+"/ace-of-hearts.gif\" /&gt;\n"
+"   &lt;img id=\"b\" class=\"card\" "
+"src=\"http://interactivepython.org/runestone/static/webfundamentals/_images"
+"/ace-of-hearts.gif\" /&gt;\n"
+"   &lt;img id=\"c\" class=\"card\" "
+"src=\"http://interactivepython.org/runestone/static/webfundamentals/_images"
+"/ace-of-hearts.gif\" /&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:301
+msgid ""
+"If you run the example you will see the three cards lined up next to each"
+" other.  As a reminder this is because:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:303
+msgid "images are inline elements and so do not create a line break."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:304
+msgid "The browser lays out inline images top to bottom and left to right."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:306
+msgid ""
+"Now lets use our positioning skills to create a stack.  Modify the "
+"example above to add the following css rule:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:308
+msgid ""
+"img#b {\n"
+"    position: relative;\n"
+"    top: 20px;\n"
+"    left: -100px;\n"
+"}"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:316
+msgid ""
+"Great, now we have made the second card appear to be on top of the first."
+"    Notice that although we have moved the second image, the position of "
+"the third image does not change.  This is because space is still reserved"
+" for the second image in its middle position, we are manually moving it "
+"relative to where it would normally be in the flow.  So a relative "
+"positioning works within the flow of the document.  Add a rule for the "
+"third image to add it to the stack."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:320
+msgid ""
+"img#c {\n"
+"    position: relative;\n"
+"    top: 40px;\n"
+"    left: -200px;\n"
+"}"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:328
+msgid "Coordinates"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:330
+msgid ""
+"You have no doubt noticed that we are using top and left values to "
+"position our box.  This box is positioned within the window where the "
+"coordinate 0,0 is in the top left corner.  The X or first coordinate gets"
+" larger as you move to the right across the windo, and the second, or Y "
+"coordinate grows larger is you move down the screen.  This takes a little"
+" adjustment as it is different from what  you learned in math class."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:333
+msgid ""
+"Now, what about elements that come after relatively positioned elements?"
+"  If you add a paragraph after the images do you expect the text to be "
+"covered up or flowed beneath all of the cards?"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:335
+msgid ""
+"Another important thing to notice is that card 2 appears to be stacked on"
+" top of card 1, and card three appears to be stacked on top of cards 1 "
+"and 2.  This is becuase elements that come later in the document "
+"naturally appear on top of elements that come before them."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:337
+msgid ""
+"If we want to change that and make it look like card 1 is on top of card "
+"2 and card 2 is on top of card 3 we can use the css ``z-index`` property "
+"to position the elements.  elements that have a larger z-index will "
+"appear to be on top of items with a lower z-index.  By default, all "
+"elements have a z-idex of zero.  So to change the order of the stack we "
+"will need to modify the rules for images b and c.  Add a z-imaeg property"
+" to the ``img#b`` and ``img#c`` rules giving b a z-index of -1 and c a "
+"z-index of -2."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:340
+msgid "Advanced Topic: Transformation"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:342
+msgid ""
+"CSS Provides the ability for us to really get fancy and transform any "
+"element by rotating or scaling.  We can make our stack of cards look much"
+" more like a hand of cards by exploring the `transform "
+"<http://www.w3schools.com/cssref/css3_pr_transform.asp>`_ property.  In "
+"fact the transform property is still so new that it goes by different "
+"names in different browsers.  For Chrome, Safari you will want to use the"
+" ``-webkit-transform`` property while in Firefox you can use "
+"``transform``.  If you are Explorer you will need to use ``-ms-"
+"transform``.  In fact to write your page to work  anywhere you would "
+"specify all three!"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:345
+msgid "Absolute"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:347
+msgid ""
+"Absolutely positioned elements are absolute, but relative to their "
+"container!  The official rule is that absolute items are positioned using"
+" the the upper left corner of the first non-static container as the "
+"origin.  If there is no non-static container, then the html tag will be "
+"used and the origin will be the upper left corner of the page."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:381
+msgid ""
+"&lt;html&gt;\n"
+"   &lt;head&gt;\n"
+"      &lt;style&gt;\n"
+"          main {\n"
+"              position: relative;\n"
+"          }\n"
+"          img.card {\n"
+"              height: 200px;\n"
+"          }\n"
+"          img#a {\n"
+"              position: absolute;\n"
+"              top: 10px;\n"
+"              left: 50px;\n"
+"          }\n"
+"          img#b {\n"
+"              position: absolute;\n"
+"              top: 10px;\n"
+"              left: 50px;\n"
+"          }\n"
+"      &lt;/style&gt;\n"
+"   &lt;/head&gt;\n"
+"&lt;body&gt;\n"
+"&lt;main&gt;\n"
+"   &lt;img id=\"a\" class=\"card\" "
+"src=\"http://interactivepython.org/runestone/static/webfundamentals/_images"
+"/ace-of-hearts.gif\" /&gt;\n"
+"   &lt;img id=\"b\" class=\"card\" "
+"src=\"http://interactivepython.org/runestone/static/webfundamentals/_images"
+"/ace-of-hearts.gif\" /&gt;\n"
+"\n"
+"&lt;/main&gt;\n"
+"&lt;/body&gt;\n"
+"&lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:382
+msgid ""
+"OK, what happened to the second card?  How can you make a stack that "
+"looks like the stack from our relatively positioned element?  What "
+"happens if you add an h1 in front of the main tag?"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:390
+msgid "Full Page Layout"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:464
+msgid ""
+" &lt;html&gt;\n"
+"     &lt;head&gt;\n"
+"         &lt;title&gt;Home&lt;/title&gt;\n"
+"         &lt;style&gt;\n"
+"         header {\n"
+"             position: fixed;\n"
+"             background-color: #bbbbbb;\n"
+"             top: 0px;\n"
+"             left: 0px;\n"
+"             width: 100%;\n"
+"             height: 20px;\n"
+"         }\n"
+"         nav {\n"
+"             margin-top: 20px;\n"
+"             margin-bottom: 0px;\n"
+"             background-color: green;\n"
+"         }\n"
+"         nav li {\n"
+"            display: inline;\n"
+"         }\n"
+"         section {\n"
+"             float: left;\n"
+"             width: 20%;\n"
+"             height: 500px;\n"
+"             background-color: blue;\n"
+"             color: white;\n"
+"         }\n"
+"         aside {\n"
+"             float: left;\n"
+"             width: 80%;\n"
+"             height: 500px;\n"
+"             background-color: red;\n"
+"         }\n"
+"         footer {\n"
+"             clear: both;\n"
+"             background-color: yellow;\n"
+"         }\n"
+"         body {\n"
+"             background-color: black;\n"
+"             margin: 0px;\n"
+"         }\n"
+"         &lt;/style&gt;\n"
+"\n"
+"     &lt;/head&gt;\n"
+"     &lt;body&gt;\n"
+"         &lt;header&gt;\n"
+"             A header that stays stuck to the top.\n"
+"         &lt;/header&gt;\n"
+"         &lt;nav&gt;\n"
+"             &lt;ul&gt;\n"
+"             &lt;li&gt;About&lt;/li&gt;\n"
+"             &lt;li&gt;Papers&lt;/li&gt;\n"
+"             &lt;li&gt;Donate&lt;/li&gt;\n"
+"             &lt;/ul&gt;\n"
+"         &lt;/nav&gt;\n"
+"         &lt;section&gt;\n"
+"             This would be a good place for a table of contents\n"
+"         &lt;/section&gt;\n"
+"         &lt;aside&gt;\n"
+"             This is the main content area\n"
+"             &lt;img "
+"src=\"http://interactivepython.org/runestone/static/webfundamentals/_images/img_sem_elements.gif\""
+" /&gt;\n"
+"         &lt;/aside&gt;\n"
+"         &lt;footer&gt;\n"
+"             Copyright Area, Contact Us.\n"
+"         &lt;/footer&gt;\n"
+"     &lt;/body&gt;\n"
+" &lt;/html&gt;"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:465
+msgid ""
+"This looks pretty good.  It almost matches the picture in the aside area."
+" This is a pretty typical layout for a good quality page, and you can use"
+" this as a template for your own homepage.  However it is missing the "
+"article area, and there is an ugly black band between the nav and the "
+"tops of the aside and section.  See if you can do the following:"
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:467
+msgid ""
+"Remove the black band.  Hint:  A good way to find out why things look the"
+" way they do is to use the \"Inspect Element\" feature of your browser.  "
+"If you right click on an area that interests you, you will be able to see"
+" all of the css rules including the default style rules that affect a "
+"particular element."
+msgstr ""
+
+#: ../../_sources/CSS/layoutattributes.rst:469
+msgid ""
+"Add an article area as shown in the picture.  Give it a purple "
+"background.  As you try to to make this area match the picture think "
+"about the effects of the various things you may try."
+msgstr ""
+
