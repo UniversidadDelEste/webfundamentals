@@ -4,77 +4,87 @@
 # Programming package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Fundamentals of Web Programming \n"
+"Project-Id-Version: Fundamentals of Web Programming\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-01 15:42-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-01 15:50-0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
+"Last-Translator: Mariano Reingart <reingart@gmail.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../../_sources/index.rst:6
 msgid "Fundamentals of Web Programming"
-msgstr ""
+msgstr "Fundamentos de la Programación Web"
 
 #: ../../_sources/index.rst:26
 msgid "Part 1: Client Side Programming"
-msgstr ""
+msgstr "Parte 1: Programación del lado del Cliente"
 
 #: ../../_sources/index.rst:30
 msgid "The World Wide Web"
-msgstr ""
+msgstr "La World Wide Web"
 
 #: ../../_sources/index.rst:41
 msgid "HTML Basics"
-msgstr ""
+msgstr "HTML Básico"
 
 #: ../../_sources/index.rst:54
 msgid "Publishing in the Cloud"
-msgstr ""
+msgstr "Publicando en la Nube"
 
 #: ../../_sources/index.rst:62
 msgid "Cascading Style Sheets"
-msgstr ""
+msgstr "Hoja de estilos en cascada CSS"
 
 #: ../../_sources/index.rst:79
 msgid "Javascript"
-msgstr ""
+msgstr "Javascript"
 
 #: ../../_sources/index.rst:99
 msgid "Part 2: Server Side Programming"
-msgstr ""
+msgstr "Parte 2: Programación del lado del Servidor"
 
 #: ../../_sources/index.rst:102
 msgid "Advanced Javascript"
-msgstr ""
+msgstr "Javascript avanzado"
 
 #: ../../_sources/index.rst:112
 msgid "Common Gateway Interface"
-msgstr ""
+msgstr "Interfaz de entrada común (CGI)"
 
 #: ../../_sources/index.rst:123
 msgid "Modern Web Frameworks"
-msgstr ""
+msgstr "Marcos de trabajo Web modernos"
 
 #: ../../_sources/index.rst:135
 msgid ""
-"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-"
-"sa/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" "
-"src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" /></a><br "
-"/><span xmlns:dct=\"http://purl.org/dc/terms/\" "
-"href=\"http://purl.org/dc/dcmitype/InteractiveResource\" "
-"property=\"dct:title\" rel=\"dct:type\">Fundamentals of Web "
-"Programming</span> by <a xmlns:cc=\"http://creativecommons.org/ns#\" "
-"href=\"http://interactivepython.org/runestone/static/webfundamentals/index.html\""
-" property=\"cc:attributionName\" rel=\"cc:attributionURL\">Brad "
-"Miller</a> is licensed under a <a rel=\"license\" "
-"href=\"http://creativecommons.org/licenses/by-sa/4.0/\">Creative Commons "
-"Attribution-ShareAlike 4.0 International License</a>."
+"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/"
+"\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src="
+"\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" /></a><br /"
+"><span xmlns:dct=\"http://purl.org/dc/terms/\" href=\"http://purl.org/dc/"
+"dcmitype/InteractiveResource\" property=\"dct:title\" rel=\"dct:type"
+"\">Fundamentals of Web Programming</span> by <a xmlns:cc=\"http://"
+"creativecommons.org/ns#\" href=\"http://interactivepython.org/runestone/"
+"static/webfundamentals/index.html\" property=\"cc:attributionName\" rel="
+"\"cc:attributionURL\">Brad Miller</a> is licensed under a <a rel="
+"\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/"
+"\">Creative Commons Attribution-ShareAlike 4.0 International License</a>."
 msgstr ""
-
+"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/"
+"\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src="
+"\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" /></a><br /"
+"><span xmlns:dct=\"http://purl.org/dc/terms/\" href=\"http://purl.org/dc/"
+"dcmitype/InteractiveResource\" property=\"dct:title\" rel=\"dct:type"
+"\">Fundamentals of Web Programming</span> by <a xmlns:cc=\"http://"
+"creativecommons.org/ns#\" href=\"http://interactivepython.org/runestone/"
+"static/webfundamentals/index.html\" property=\"cc:attributionName\" rel="
+"\"cc:attributionURL\">Brad Miller</a> is licensed under a <a rel="
+"\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/"
+"\">Creative Commons Attribution-ShareAlike 4.0 International License</a>."
